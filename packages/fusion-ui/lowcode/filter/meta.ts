@@ -253,6 +253,28 @@ const FilterMeta: ComponentMetadata = {
             },
             defaultValue: 'right',
           },
+          {
+            name: 'value',
+            // condition: hideProp,
+            title: {
+              label: {
+                type: 'i18n',
+                zh_CN: '表单值',
+                en_US: 'value',
+              },
+              tip: {
+                type: 'i18n',
+                zh_CN: '属性: value | 说明: 表单值',
+                en_US: 'prop: value | description: value instance',
+              },
+            },
+            setter: {
+              componentName: 'MixedSetter',
+              props: {
+                setters: ['JsonSetter', 'ExpressionSetter'],
+              },
+            },
+          },
         ],
       },
       formItemsProps,

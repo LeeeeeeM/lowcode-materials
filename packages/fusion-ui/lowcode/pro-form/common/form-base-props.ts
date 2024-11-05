@@ -499,7 +499,7 @@ const props: IProps[] = [
   },
   {
     name: 'value',
-    condition: hideProp,
+    // condition: hideProp,
     title: {
       label: {
         type: 'i18n',

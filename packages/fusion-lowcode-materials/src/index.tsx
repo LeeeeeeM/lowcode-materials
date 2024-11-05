@@ -1,7 +1,7 @@
 import Link from './components/link';
 import Image from './components/image';
 import Video from './components/video';
-import Balloon from './components/balloon';
+// import Balloon from './components/balloon';
 import Calendar from './components/calendar';
 import RichText from './components/rich-text';
 import NextText from './components/next-text';
@@ -71,4 +71,4 @@ export {
   DatePicker2,
 } from '@alifd/next';
 
-export { Link, Image, Video, RichText, NextText, NoteWrapper, Calendar, Balloon, NextTable, Div };
+export { Link, Image, Video, RichText, NextText, NoteWrapper, Calendar, NextTable, Div };

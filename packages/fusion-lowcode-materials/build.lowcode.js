@@ -56,6 +56,6 @@ module.exports = {
         },
       },
     ],
-    './plugins/compatible.build.js',
+    // './plugins/compatible.build.js',
   ],
 };

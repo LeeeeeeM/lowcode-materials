@@ -558,9 +558,20 @@ const validationConfig = {
   ],
 };
 
-const childFormConfig = {
-  name: 'childForm',
+const enableChildFormConfig = {
+  name: 'childForm.enable',
   title: '开启子表单',
+  setter: {
+    componentName: 'BoolSetter',
+  },
+};
+
+const childFormConfig = {
+  name: 'childForm.content',
+  title: '子表单内容',
+  condition: (target) => {
+    return !!target.parent.getPropValue('childForm.enable');
+  },
   setter: {
     componentName: 'SlotSetter',
     initialValue: {
@@ -611,6 +622,7 @@ export const formItemProps = [
   nameConfig,
   columnSpanConfig,
   labelConfig,
+  enableChildFormConfig,
   childFormConfig,
   helpConfig,
   extraConfig,

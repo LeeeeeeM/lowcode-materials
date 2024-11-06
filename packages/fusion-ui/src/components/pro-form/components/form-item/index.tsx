@@ -43,6 +43,8 @@ const ProFormItem: React.ForwardRefRenderFunction<any, ProFormItemProps> = (
         )
       : null;
 
+  const { enable: childFormEnable = false,  content: childFormContent = null } = childForm || {};
+
   return (
     <Item
       labelAlign={labelAlign}
@@ -114,7 +116,7 @@ const ProFormItem: React.ForwardRefRenderFunction<any, ProFormItemProps> = (
         }
         return child;
       })}
-      {childForm ? <div className="fusion-ui-form-item-bubble">{childForm}</div> : null}
+      {childFormEnable ? <div className="fusion-ui-form-item-bubble">{childFormContent}</div> : null}
     </Item>
   );
 };

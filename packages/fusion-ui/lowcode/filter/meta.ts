@@ -255,7 +255,7 @@ const FilterMeta: ComponentMetadata = {
           },
           {
             name: 'value',
-            // condition: hideProp,
+            condition: true,
             title: {
               label: {
                 type: 'i18n',
@@ -284,7 +284,23 @@ const FilterMeta: ComponentMetadata = {
     supports: {
       style: true,
       className: true,
-      events: ['onExpand', 'onSearch', 'onReset'],
+      events: [{
+        name: 'onExpand',
+        description: '查询表头展开触发',
+        template: `\n\n  onExpand(expanded /* 是否展开 */) {\n    // 点击展开图标时触发\n    console.log('onExpand', expanded);\n  }\n`
+      }, 
+      
+      {
+        name: 'onSearch',
+        description: '点击查询触发',
+        template: `\n\n  onSearch(data /* 当前绑定的表单对象 */) {\n    // 点击查询按钮触发\n    console.log('onSearch', data);\n  }\n`
+      },
+      
+      {
+        name: 'onReset',
+        description: '重置所有表单',
+        template: `\n\n  onReset() {\n    // 点击重置时触发，执行后当前表单内所有值置为 undefined \n    console.log('reset');\n  }\n`
+      }],
     },
     component: {
       isMinimalRenderUnit: true,

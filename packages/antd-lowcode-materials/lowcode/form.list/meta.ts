@@ -5,6 +5,7 @@ export default {
   title: '表单列表',
   category: '表单',
   snippets,
+  group: 'ANTD组件',
   props: [
     {
       name: 'name',

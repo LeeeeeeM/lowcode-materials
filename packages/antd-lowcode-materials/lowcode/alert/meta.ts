@@ -2,6 +2,7 @@ import snippets from './snippets';
 
 export default {
   snippets,
+  group: 'ANTD组件',
   componentName: 'Alert',
   title: '警告提示',
   category: '反馈',

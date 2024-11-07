@@ -2,6 +2,7 @@ import snippets from './snippets';
 
 export default {
   snippets,
+  group: 'ANTD组件',
   componentName: 'Input.Search',
   title: '搜索框',
   category: '表单',

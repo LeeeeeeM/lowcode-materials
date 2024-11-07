@@ -2,6 +2,7 @@ import snippets from './snippets';
 
 export default {
   snippets,
+  group: 'ANTD组件',
   componentName: 'Slider',
   title: '滑动输入条',
   category: '表单',

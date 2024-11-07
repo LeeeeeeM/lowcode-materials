@@ -2,6 +2,7 @@ import snippets from './snippets';
 
 export default {
   snippets,
+  group: 'ANTD组件',
   componentName: 'Anchor.Link',
   title: '锚点链接',
   category: '其他',

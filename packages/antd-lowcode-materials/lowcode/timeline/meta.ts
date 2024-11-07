@@ -4,6 +4,7 @@ import snippets from './snippets';
 
 export default {
   snippets,
+  group: 'ANTD组件',
   componentName: 'Timeline',
   title: '时间轴',
   category: '数据展示',

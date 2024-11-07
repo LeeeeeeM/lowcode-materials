@@ -2,6 +2,7 @@ import snippets from './snippets';
 
 export default {
   snippets,
+  group: 'ANTD组件',
   componentName: 'Steps.Step',
   title: '步骤项',
   props: [

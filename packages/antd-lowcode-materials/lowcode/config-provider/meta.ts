@@ -2,6 +2,7 @@ import snippets from './snippets';
 
 export default {
   snippets,
+  group: 'ANTD组件',
   componentName: 'ConfigProvider',
   title: '全局化配置',
   category: '其他',

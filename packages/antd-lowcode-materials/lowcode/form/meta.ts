@@ -3,6 +3,7 @@ import { uuid } from '../_utils/utils'
 
 export default {
   snippets,
+  group: 'ANTD组件',
   componentName: 'Form',
   title: '表单容器',
   category: '表单',

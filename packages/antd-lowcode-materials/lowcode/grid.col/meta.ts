@@ -6,6 +6,7 @@ function clamp(value, min, max) {
 
 export default {
   snippets,
+  group: 'ANTD组件',
   componentName: 'Col',
   title: '栅格-列',
   props: [

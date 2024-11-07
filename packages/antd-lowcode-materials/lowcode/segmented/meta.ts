@@ -2,10 +2,10 @@ import snippets from './snippets';
 
 export default {
   snippets,
+  group: 'ANTD组件',
   componentName: 'Segmented',
   title: '分段控制器',
   category: '数据展示',
-  group: '基础组件',
   props: [
     {
       name: 'block',

@@ -4,6 +4,7 @@ import snippets from './snippets';
 
 export default {
   snippets,
+  group: 'ANTD组件',
   componentName: 'Tabs',
   title: '标签页',
   category: '数据展示',

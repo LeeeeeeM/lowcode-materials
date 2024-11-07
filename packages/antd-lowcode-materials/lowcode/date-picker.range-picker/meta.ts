@@ -2,6 +2,7 @@ import snippets from './snippets';
 
 export default {
   snippets,
+  group: 'ANTD组件',
   componentName: 'DatePicker.RangePicker',
   title: '日期区间选择',
   category: '表单',

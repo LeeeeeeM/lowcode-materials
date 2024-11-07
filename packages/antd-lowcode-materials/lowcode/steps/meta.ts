@@ -4,6 +4,7 @@ import snippets from './snippets';
 
 export default {
   snippets,
+  group: 'ANTD组件',
   componentName: 'Steps',
   title: '步骤条',
   category: '导航',

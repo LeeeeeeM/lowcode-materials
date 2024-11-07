@@ -2,6 +2,7 @@ import snippets from './snippets';
 
 export default {
   snippets,
+  group: 'ANTD组件',
   componentName: 'Popconfirm',
   title: '气泡确认框',
   category: '反馈',

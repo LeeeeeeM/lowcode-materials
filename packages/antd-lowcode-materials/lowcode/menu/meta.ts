@@ -5,6 +5,7 @@ import snippets from './snippets';
 
 export default {
   snippets,
+  group: 'ANTD组件',
   componentName: 'Menu',
   title: '导航菜单',
   category: '导航',

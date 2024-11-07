@@ -298,4 +298,5 @@ export default {
     },
   },
   snippets,
+  group: 'ANTD组件',
 };

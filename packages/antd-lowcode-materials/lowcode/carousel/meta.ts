@@ -4,6 +4,7 @@ import snippets from './snippets';
 
 export default {
   snippets,
+  group: 'ANTD组件',
   componentName: 'Carousel',
   title: '走马灯',
   category: '数据展示',

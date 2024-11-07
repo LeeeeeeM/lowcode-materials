@@ -3,6 +3,7 @@ import snippets from './snippets';
 
 export default {
   snippets,
+  group: 'ANTD组件',
   componentName: 'Space',
   title: '间距',
   category: '布局',

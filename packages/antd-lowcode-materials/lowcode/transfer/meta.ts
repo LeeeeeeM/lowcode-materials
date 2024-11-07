@@ -4,6 +4,7 @@ import snippets from './snippets';
 
 export default {
   snippets,
+  group: 'ANTD组件',
   componentName: 'Transfer',
   title: '穿梭框',
   category: '表单',

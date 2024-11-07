@@ -3,6 +3,7 @@ import { AntdIconSetter } from '../_setters';
 
 export default {
   snippets,
+  group: 'ANTD组件',
   componentName: 'Icon',
   title: '图标',
   category: '通用',

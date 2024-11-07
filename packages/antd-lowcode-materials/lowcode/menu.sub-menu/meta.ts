@@ -5,6 +5,7 @@ import snippets from './snippets';
 
 export default {
   snippets,
+  group: 'ANTD组件',
   componentName: 'Menu.SubMenu',
   title: '子菜单',
   props: [

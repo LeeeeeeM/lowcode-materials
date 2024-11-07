@@ -4,6 +4,7 @@ import snippets from './snippets';
 
 export default {
   snippets,
+  group: 'ANTD组件',
   componentName: 'AutoComplete',
   title: '辅助提示输入框',
   category: '表单',

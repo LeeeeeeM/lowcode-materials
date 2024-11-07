@@ -290,7 +290,7 @@ export const proTableMeta: IComponentDescription = {
   docUrl: '',
   icon: 'https://img.alicdn.com/imgextra/i4/O1CN01z4HeA61OwhjktJNDW_!!6000000001770-55-tps-56-56.svg',
   devMode: 'proCode',
-  group: '精选组件',
+  group: 'FUSION-UI组件',
   category: '表格类',
   tags: ['业务组件'],
   npm: {

@@ -1,7 +1,7 @@
 import snippets from './snippets';
 
 export default {
-  group: '原子组件',
+  group: 'FUSION基础组件',
   componentName: 'Range',
   title: '区段选择器',
   docUrl: '',

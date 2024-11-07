@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'FUSION基础组件',
   componentName: 'PopupItem',
   title: 'PopupItem',
   docUrl: '',

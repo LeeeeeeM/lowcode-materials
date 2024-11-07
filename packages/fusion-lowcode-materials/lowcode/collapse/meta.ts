@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'FUSION基础组件',
   componentName: 'Collapse',
   title: '折叠面板',
   docUrl: '',

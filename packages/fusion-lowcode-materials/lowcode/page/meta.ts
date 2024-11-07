@@ -1,6 +1,6 @@
 export default [
   {
-    group: '原子组件',
+    group: 'FUSION基础组件',
     componentName: 'Page',
     title: '页面',
     props: [

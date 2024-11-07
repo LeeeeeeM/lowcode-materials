@@ -6,7 +6,7 @@ const LineChartMeta: IPublicTypeComponentMetadata = {
   componentName: 'LineChart',
   title: '折线图',
   category: '图表',
-  group: '精选组件',
+  group: 'FUSION-UI组件',
   docUrl: '',
   screenshot: '',
   devMode: 'proCode',

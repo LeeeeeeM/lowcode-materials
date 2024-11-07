@@ -1,5 +1,5 @@
 export default {
-  group: '原子组件',
+  group: 'FUSION基础组件',
   componentName: 'Timeline.Item',
   title: '时间轴项',
   docUrl: '',

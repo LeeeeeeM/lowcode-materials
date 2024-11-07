@@ -1,7 +1,7 @@
 import snippets from './snippets';
 
 export default {
-  group: '原子组件',
+  group: 'FUSION基础组件',
   componentName: 'Switch',
   title: '开关',
   docUrl: '',

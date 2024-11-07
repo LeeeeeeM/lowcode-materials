@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'FUSION基础组件',
   componentName: 'Dropdown',
   title: '下拉菜单',
   docUrl: '',

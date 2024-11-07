@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'FUSION基础组件',
   componentName: 'Menu.Divider',
   title: '菜单分隔线',
   docUrl: '',

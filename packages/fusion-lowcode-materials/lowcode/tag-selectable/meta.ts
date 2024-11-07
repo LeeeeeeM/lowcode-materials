@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'FUSION基础组件',
   componentName: 'Tag.Selectable',
   title: '可选中标签',
   docUrl: '',

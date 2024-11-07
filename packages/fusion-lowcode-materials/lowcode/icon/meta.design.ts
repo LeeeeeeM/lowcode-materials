@@ -2,7 +2,7 @@ import { IPublicModelNode } from '@alilc/lowcode-types';
 import snippets from './snippets';
 
 export default {
-  group: '原子组件',
+  group: 'FUSION基础组件',
   componentName: 'Icon',
   title: '图标',
   docUrl: '',

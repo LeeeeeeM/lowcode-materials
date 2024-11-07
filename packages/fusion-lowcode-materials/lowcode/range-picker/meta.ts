@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'FUSION基础组件',
   componentName: 'RangePicker',
   title: '日期区段选择',
   docUrl: '',

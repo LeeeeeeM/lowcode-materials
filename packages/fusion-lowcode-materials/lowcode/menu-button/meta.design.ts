@@ -1,7 +1,7 @@
 import { getDataFromPlainText } from './adaptor';
 
 export default {
-  group: '原子组件',
+  group: 'FUSION基础组件',
   componentName: 'MenuButton',
   title: '分隔按钮',
   docUrl: '',

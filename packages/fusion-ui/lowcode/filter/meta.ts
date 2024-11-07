@@ -38,7 +38,7 @@ const operationConfig = {
 const FilterMeta: ComponentMetadata = {
   componentName: 'Filter',
   title: '查询筛选',
-  group: '精选组件',
+  group: 'FUSION-UI组件',
   category: '表格类',
   tags: ['业务组件'],
   docUrl: '',

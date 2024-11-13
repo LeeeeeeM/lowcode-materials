@@ -563,6 +563,7 @@ const enableChildFormConfig = {
   title: '开启子表单',
   setter: {
     componentName: 'BoolSetter',
+    initialValue: false
   },
 };
 
@@ -651,6 +652,7 @@ export const formItemShortcutProps = [
   labelConfig,
   sizeConfig,
   columnSpanConfig,
+  enableChildFormConfig,
   childFormConfig,
   {
     name: 'labelTip.enable',

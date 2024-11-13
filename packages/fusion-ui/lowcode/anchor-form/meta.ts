@@ -6,7 +6,7 @@ const AnchorFormMeta: IComponentDescription = {
   componentName: 'AnchorForm',
   title: '电梯表单',
   category: '表单类',
-  group: 'FUSION-UI组件',
+  group: '精选组件',
   docUrl: '',
   screenshot:
     'https://img.alicdn.com/imgextra/i1/O1CN01jnfLpK1rFJ4nPj9Pt_!!6000000005601-55-tps-56-56.svg',

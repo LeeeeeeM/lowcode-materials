@@ -82,7 +82,7 @@ const groupTableMeta: IComponentDescription = {
   docUrl: '',
   icon: 'https://img.alicdn.com/imgextra/i4/O1CN01idASGC1tGLCY6bAUC_!!6000000005874-55-tps-56-56.svg',
   devMode: 'proCode',
-  group: 'FUSION-UI组件',
+  group: '精选组件',
   category: '表格类',
   tags: ['业务组件'],
   npm: {

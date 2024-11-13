@@ -5,7 +5,7 @@ import { operationProps } from '../common';
 const ProDialogMeta: ComponentMetadata = {
   componentName: 'ProDialog',
   title: '对话框',
-  group: 'FUSION-UI组件',
+  group: '精选组件',
   docUrl: '',
   screenshot:
     'https://img.alicdn.com/imgextra/i1/O1CN01n5JLZG1aBmYZlckSx_!!6000000003292-55-tps-56-56.svg',

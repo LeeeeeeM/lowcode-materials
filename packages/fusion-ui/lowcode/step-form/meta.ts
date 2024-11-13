@@ -98,7 +98,7 @@ const ProFormMeta: IComponentDescription[] = [
     componentName: 'StepForm',
     category: '表单类',
     title: '步骤表单',
-    group: 'FUSION-UI组件',
+    group: '精选组件',
     docUrl: '',
     screenshot: '',
     devMode: 'procode',

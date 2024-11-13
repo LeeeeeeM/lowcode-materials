@@ -21,7 +21,6 @@
   "devDependencies": {
     "@alib/build-scripts": "^0.1.23",
     "@alifd/build-plugin-lowcode": "^0.4.0",
-    "@ant-design/icons": "^4.7.0",
     "@types/lodash": "^4.14.181",
     "@types/react": "^18.0.1",
     "@types/react-dom": "^18.0.0",
@@ -44,7 +43,7 @@
     }
   ],
   "dependencies": {
-    "@ant-design/icons": "^4.6.2",
+    "@ant-design/icons": "^4.7.0",
     "antd": "^4.24.7",
     "moment": "^2.29.1",
     "@babel/runtime": "^7.0.0"

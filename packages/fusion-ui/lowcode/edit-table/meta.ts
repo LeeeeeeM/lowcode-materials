@@ -141,7 +141,7 @@ export const editTableMeta: IComponentDescription = {
   docUrl: '',
   icon: 'https://img.alicdn.com/imgextra/i4/O1CN01dtjMvv1heoyqst9u5_!!6000000004303-55-tps-56-56.svg',
   devMode: 'procode',
-  group: 'FUSION-UI组件',
+  group: '精选组件',
   category: '表格类',
   tags: ['业务组件'],
   npm: {

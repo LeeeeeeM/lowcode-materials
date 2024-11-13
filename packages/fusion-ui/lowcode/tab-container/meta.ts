@@ -217,7 +217,7 @@ const TabContainerMeta: ComponentMetadata[] = [
     componentName: 'TabContainer',
     title: '选项卡',
     category: '布局容器类',
-    group: 'FUSION-UI组件',
+    group: '精选组件',
     docUrl: '',
     screenshot:
       'https://img.alicdn.com/imgextra/i4/O1CN01mh9LPG268B90t8DaA_!!6000000007616-55-tps-56-56.svg',

@@ -6,7 +6,7 @@ const pieChartMeta: IPublicTypeComponentMetadata = {
   componentName: 'PieChart',
   title: '饼图',
   category: '图表',
-  group: 'FUSION-UI组件',
+  group: '精选组件',
   docUrl: '',
   screenshot: '',
   devMode: 'proCode',

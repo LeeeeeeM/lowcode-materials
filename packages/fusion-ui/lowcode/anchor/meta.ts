@@ -4,7 +4,7 @@ const meta = {
   components: [
     {
       componentName: 'Anchor',
-      group: 'FUSION-UI组件',
+      group: '精选组件',
       title: '电梯容器',
       category: '布局容器类',
       docUrl: '',

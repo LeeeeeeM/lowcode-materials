@@ -38,7 +38,7 @@ const operationConfig = {
 const FilterMeta: ComponentMetadata = {
   componentName: 'Filter',
   title: '查询筛选',
-  group: 'FUSION-UI组件',
+  group: '精选组件',
   category: '表格类',
   tags: ['业务组件'],
   docUrl: '',
@@ -94,7 +94,11 @@ const FilterMeta: ComponentMetadata = {
           },
           {
             name: 'isPreview',
-            condition: () => false,
+            condition: (target) => {
+              // const enableA11yMode = target.parent.node.parent.getPropValue('enableA11yMode');
+              // console.log(enableA11yMode);
+              return false;
+            },
             title: {
               label: {
                 type: 'i18n',

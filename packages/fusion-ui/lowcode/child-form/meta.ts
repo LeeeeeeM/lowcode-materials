@@ -7,7 +7,7 @@ const ChildFormMeta: ComponentMetadata = {
   docUrl: '',
   screenshot: '',
   category: '表单类',
-  group: 'FUSION-UI组件',
+  group: '精选组件',
   devMode: 'proCode',
   hidden: true,
   npm: {

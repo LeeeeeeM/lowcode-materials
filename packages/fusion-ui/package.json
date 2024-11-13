@@ -53,6 +53,7 @@
     "@babel/runtime": "^7.0.0"
   },
   "devDependencies": {
+    "@alilc/lowcode-setter-behavior": "^1.0.0",
     "@alifd/theme-2": "^0.4.4",
     "node-sass": "^8.0.0",
     "@umijs/plugin-sass": "^1.1.1",

@@ -1,5 +1,5 @@
 import { version } from '../package';
-
+// import { plugins } from '@alilc/lowcode-engine';
 // export { default as ProCard } from './components/pro-card';
 // export type { CardProps, CardSectionProps } from './components/pro-card';
 
@@ -23,9 +23,21 @@ export * from './components/button';
 export * from './components/button-group';
 export { default as StoryPlaceholder } from './components/story-placeholder';
 
+export * from './components/a11y-table';
+
 export * from './variables';
 
 const bizCssPrefix = 'fusion-ui';
 const displayName = 'FusionUI';
 
 export { bizCssPrefix, displayName, version };
+
+
+// if (process.env.NODE_ENV === 'development') {
+//   const plugin = require('./plugins/index');
+//   async function registerPlugins() {
+//     await plugins.register(plugin.default);
+//     await plugins.init({});
+//   }
+//   registerPlugins();
+// }

@@ -205,7 +205,7 @@ export const operations: IProps = {
                       name: 'onClick',
                       display: 'inline',
                       title: '点击事件',
-                      condition: hideProp,
+                      // condition: hideProp,
                       setter: 'FunctionSetter',
                       extraProps: {
                         supportVariable: true,

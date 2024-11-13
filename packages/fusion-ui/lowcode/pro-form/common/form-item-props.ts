@@ -170,7 +170,7 @@ const labelAlignConfig = {
     tip: '上, 左, 内',
   },
   condition: hideProp,
-  getValue: getParentValue,
+  // getValue: getParentValue,
   setter: {
     componentName: 'RadioGroupSetter',
     props: {
@@ -200,7 +200,7 @@ const labelColFixedSpanConfig = {
   name: 'labelCol.fixedSpan',
   title: '标题宽度',
   condition: showWithLabelAlign,
-  getValue: getParentValue,
+  // getValue: getParentValue,
   setter: {
     componentName: 'NumberSetter',
     props: {
@@ -214,7 +214,7 @@ const labelColOffsetConfig = {
   name: 'labelCol.offset',
   title: '标题偏移',
   condition: showWithLabelAlign,
-  getValue: getParentValue,
+  // getValue: getParentValue,
   setter: {
     componentName: 'NumberSetter',
     props: {
@@ -228,7 +228,7 @@ const wrapperColSpanConfig = {
   name: 'wrapperCol.span',
   title: '内容宽度',
   condition: showWithLabelAlign,
-  getValue: getParentValue,
+  // getValue: getParentValue,
   setter: {
     componentName: 'NumberSetter',
     props: {
@@ -242,7 +242,7 @@ const wrapperColOffsetConfig = {
   name: 'wrapperCol.offset',
   title: '内容偏移',
   condition: showWithLabelAlign,
-  getValue: getParentValue,
+  // getValue: getParentValue,
   setter: {
     componentName: 'NumberSetter',
     props: {

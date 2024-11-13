@@ -35,6 +35,15 @@ export default {
         defaultValue: false,
       },
       {
+        name: 'disabled',
+        title: {
+          label: '是否禁用',
+          tip: '属性: disabled | 说明: 是否被禁用',
+        },
+        setter: 'BoolSetter',
+        description: '是否禁用',
+      },
+      {
         name: 'showSearch',
         title: {
           label: '可搜索',

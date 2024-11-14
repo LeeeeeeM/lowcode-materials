@@ -2,7 +2,7 @@ import { ComponentMetadata, Snippet } from '@ali/lowcode-types';
 
 const A11yTableMeta: ComponentMetadata = {
   componentName: 'A11yTable',
-  title: '自定义查询筛选',
+  title: '无障碍查询筛选表格',
   group: '精选组件',
   category: '表格类',
   tags: ['业务组件'],
@@ -47,6 +47,93 @@ const A11yTableMeta: ComponentMetadata = {
           },
         ],
       },
+      {
+        name: 'requestConfig',
+        title: '请求配置',
+        type: 'group',
+        display: 'accordion',
+        condition: (target) => {
+          const enableA11yMode = target.getProps().getPropValue('enableA11yMode');
+          return !!enableA11yMode;
+        },
+        items: [
+          {
+            name: 'customCurrentPageKey',
+            setter: 'StringSetter',
+            title: {
+              label: '当前页码对应字段',
+              tip: '默认为currentPage',
+            },
+            defaultValue: "currentPage"
+          },
+          {
+            name: 'customPageSizeKey',
+            setter: 'StringSetter',
+            title: {
+              label: '当前页码对应字段',
+              tip: '默认为pageSize',
+            },
+            defaultValue: "pageSize"
+          },
+          {
+            name: 'enableCustomRequest',
+            setter: 'BoolSetter',
+            title: {
+              label: '开启自定义请求配置',
+              tip: 'disabled | 是否为禁用状态',
+            },
+            defaultValue: false
+          },
+          {
+            name: 'customRequest',
+            condition: (target) => {
+              const enableCustomRequest = target.getProps().getPropValue('enableCustomRequest');
+              return !!enableCustomRequest;
+            },
+            title: {
+              label: '自定义请求配置',
+              tip: '使用自定义的请求data',
+            },
+            setter: {
+              componentName: 'MixedSetter',
+              props: {
+                setters: ['JsonSetter', 'ExpressionSetter'],
+              },
+            },
+            defaultValue: {}
+          },
+        ],
+      },
+      {
+        name: 'responseConfig',
+        title: '响应配置',
+        type: 'group',
+        display: 'accordion',
+        condition: (target) => {
+          const enableA11yMode = target.getProps().getPropValue('enableA11yMode');
+          return !!enableA11yMode;
+        },
+        items: [
+          {
+            name: 'customTotalPath',
+            setter: 'StringSetter',
+            title: {
+              label: 'Total对应字段位置',
+              tip: '默认为total，如果是多层可以写 a.b.c',
+            },
+            defaultValue: "total"
+          },
+          {
+            name: 'customDataSourcePath',
+            setter: 'StringSetter',
+            title: {
+              label: '返回数据对应字段位置',
+              tip: '默认为data，如果是多层可以写 a.b.c',
+            },
+            defaultValue: "data"
+          }
+        ],
+      }
     ],
     supports: {
       style: true,
@@ -74,7 +161,7 @@ const A11yTableMeta: ComponentMetadata = {
       // disableBehaviors: ['copy'],
       nestingRule: {
         // 仅允许放入 filter 和 protable
-        childWhitelist: ['Filter', 'ProTable'],
+        childWhitelist: ['A11yFilter', 'ProA11yTable'],
       },
     },
   },
@@ -83,7 +170,7 @@ const A11yTableMeta: ComponentMetadata = {
 
 const snippets: Snippet[] = [
   {
-    title: '自定义查询筛选',
+    title: '无障碍查询筛选表格',
     screenshot:
       'https://img.alicdn.com/imgextra/i1/O1CN01O4Oshp1RA6Z0sFZ6h_!!6000000002070-55-tps-56-56.svg',
     schema: {
@@ -93,7 +180,7 @@ const snippets: Snippet[] = [
         enableA11yMode: true
       },
       children: [{
-        componentName: 'Filter',
+        componentName: 'A11yFilter',
         props: {
           labelAlign: 'top',
         },
@@ -111,7 +198,7 @@ const snippets: Snippet[] = [
           },
         })),
       }, {
-        componentName: 'ProTable',
+        componentName: 'ProA11yTable',
         props: {
           dataSource: [
             {

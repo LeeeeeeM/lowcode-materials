@@ -7,6 +7,11 @@ module.exports = {
     '@': './src',
     '@alifd/fusion-ui': './src',
   },
+  devServer: {
+    proxy: {
+      '/api': 'http://192.170.12.9:30492',
+    },
+  },
   plugins: [
     [
       '@alifd/build-plugin-lowcode',

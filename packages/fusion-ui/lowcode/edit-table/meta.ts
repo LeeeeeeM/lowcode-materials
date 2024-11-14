@@ -2,6 +2,8 @@ import { IComponentDescription } from '../types/index';
 import { ProTableProps } from '../pro-table/pro-table-meta';
 
 function editTablePropsFilter(prop: any) {
+  return true;
+  // 保留数据源，如果要已出数据源则需要处理
   const ignorePropNames: string[] = ['dataSource'];
   return !ignorePropNames.includes(prop?.name);
 }

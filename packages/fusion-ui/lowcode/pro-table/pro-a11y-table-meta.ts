@@ -36,6 +36,11 @@ export const ProTableProps = [
     name: 'dataSource',
     title: '表格数据源',
     display: 'accordion',
+    condition: (target) => {
+      const enableA11yMode = !!target.parent.node.parent.getPropValue('enableA11yMode');
+      enableA11yMode && console.warn(`由于父级组件开启了无障碍模式 enableA11yMode: ${enableA11yMode}, 分页器隐藏`)
+      return !enableA11yMode;
+    },
     setter: (target) => {
       const columns = target.getProps().getPropValue('columns');
       if (!columns || isJSExpression(columns)) {
@@ -123,19 +128,29 @@ export const ProTableProps = [
                   min: 0,
                 },
               },
-              hidden() {
-                console.log(
-                  'visiblevisiblevisiblevisible',
-                  this.parent.getParam('hidden').getValue(),
-                );
-
-                return !this.parent.getParam('hidden').getValue();
+              condition: (target) => {
+                const enableA11yMode = !!target.parent.node.parent.getPropValue('enableA11yMode');
+                enableA11yMode && console.warn(`由于父级组件开启了无障碍模式 enableA11yMode: ${enableA11yMode}, 分页器隐藏`)
+                return !enableA11yMode;
               },
+              // hidden() {
+              //   console.log(
+              //     'visiblevisiblevisiblevisible',
+              //     this.parent.getParam('hidden').getValue(),
+              //   );
+
+              //   return !this.parent.getParam('hidden').getValue();
+              // },
             },
             {
               name: 'current',
               title: '当前页',
               setter: positiveIntegerSetter,
+              condition: (target) => {
+                const enableA11yMode = !!target.parent.node.parent.getPropValue('enableA11yMode');
+                enableA11yMode && console.warn(`由于父级组件开启了无障碍模式 enableA11yMode: ${enableA11yMode}, 分页器隐藏`)
+                return !enableA11yMode;
+              },
             },
             {
               name: 'pageSize',
@@ -293,19 +308,20 @@ export const ProTableProps = [
   globalStyleField,
 ];
 
-export const proTableMeta: IComponentDescription = {
-  componentName: 'ProTable',
-  title: '高级表格',
+export const proA11yTableMeta: IComponentDescription = {
+  componentName: 'ProA11yTable',
+  title: '无障碍高级表格',
   docUrl: '',
   icon: 'https://img.alicdn.com/imgextra/i4/O1CN01z4HeA61OwhjktJNDW_!!6000000001770-55-tps-56-56.svg',
   devMode: 'proCode',
   group: '精选组件',
   category: '表格类',
   tags: ['业务组件'],
+  hidden: true,
   npm: {
     package: '@alifd/fusion-ui',
     version: '1.0.24-21',
-    exportName: 'ProTable',
+    exportName: 'ProA11yTable',
     main: 'lib/index.js',
     destructuring: true,
     subName: '',
@@ -316,6 +332,7 @@ export const proTableMeta: IComponentDescription = {
     component: {
       isContainer: false,
       isMinimalRenderUnit: true,
+      disableBehaviors: "*",
       nestingRule: {},
     },
     supports: {},
@@ -323,11 +340,11 @@ export const proTableMeta: IComponentDescription = {
   props: [],
   snippets: [
     {
-      title: '高级表格',
+      title: '无障碍高级表格',
       screenshot:
         'https://img.alicdn.com/imgextra/i1/O1CN01R1OdLV1GgCXW0rjop_!!6000000000651-2-tps-112-112.png',
       schema: {
-        componentName: 'ProTable',
+        componentName: 'ProA11yTable',
         props: {
           dataSource: [
             {
@@ -442,7 +459,7 @@ export const proTableMeta: IComponentDescription = {
       screenshot:
         'https://img.alicdn.com/imgextra/i1/O1CN01m4IZ481VKPwFFbDhP_!!6000000002634-2-tps-112-112.png',
       schema: {
-        componentName: 'ProTable',
+        componentName: 'ProA11yTable',
         props: {
           isTree: true,
           dataSource: [

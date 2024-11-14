@@ -1,9 +1,11 @@
 import { IAssets } from '../types/index';
 import { proTableMeta } from './pro-table-meta';
+import { proA11yTableMeta } from './pro-a11y-table-meta';
 
 const meta: IAssets = {
   components: [
     proTableMeta,
+    proA11yTableMeta,
     {
       componentName: 'ProTableSlot',
       title: '表格槽位',

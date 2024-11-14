@@ -15,6 +15,7 @@ export * from './components/pro-form';
 export * from './components/pro-table';
 export * from './components/expand-table';
 export * from './components/filter';
+export * from './components/a11y-filter';
 export * from './components/anchor';
 export * from './components/pro-dialog';
 export * from './components/tab-container';

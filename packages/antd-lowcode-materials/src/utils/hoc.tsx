@@ -21,9 +21,9 @@ function convertProps(
  * 部分组件ref比较特殊，包一层会解决这个问题
  */
 export function withWrap(Comp: ComponentType<any>) {
-  return forwardRef((props: any, ref: Ref<any>) => {
-    return <Comp {...props} ref={ref} />;
-  });
+  return (props: any) => {
+    return <Comp {...props} />;
+  };
 }
 
 /**

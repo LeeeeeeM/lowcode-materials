@@ -1,5 +1,6 @@
 import { IProps } from '../types/index';
 import { buttonGroupConfigureProp } from '../common/button-groups';
+import { newButtonGroupConfigureProp } from '../common/button-new-groups';
 
 export const actionColumnField: IProps = {
   name: 'actionColumnProps',
@@ -74,8 +75,14 @@ export const actionColumnField: IProps = {
     },
   },
 };
+// export const actionColumnButtonField: IProps = {
+//   ...buttonGroupConfigureProp,
+//   name: 'actionColumnButtons',
+//   title: '操作列按钮',
+// };
+
 export const actionColumnButtonField: IProps = {
-  ...buttonGroupConfigureProp,
+  ...newButtonGroupConfigureProp,
   name: 'actionColumnButtons',
   title: '操作列按钮',
 };

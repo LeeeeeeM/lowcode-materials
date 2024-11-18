@@ -96,9 +96,29 @@ export const EditTable = function (props: EditTableProps) {
   ];
   React.useEffect(() => {
     const { dataSource: actionColumnDataSource = [] } = propActionColumnButtons;
+    // 在 meta 中定义初始值
+    const customActionColumnDataSource = actionColumnDataSource.filter(item => !item.operation);
+    const originActionColumnDataSource = actionColumnDataSource.filter(item => item.operation);
+    const composedDefaultActionColumnButtons = defaultActionColumnButtons.map((item) => {
+      const editOperation = originActionColumnDataSource.find((item) => item.operation === 'edit');
+      const deleteOperation = originActionColumnDataSource.find((item) => item.operation === 'delete');
+      if (item.children === '编辑') {
+        return {
+          ...item,
+          ...editOperation
+        }
+      }
+      if (item.children === '删除') {
+        return {
+          ...item,
+          ...deleteOperation
+        }
+      }
+      return item;
+    });
     const _actionColumnButtons = {
       ...actionColumnButtons,
-      dataSource: defaultActionColumnButtons.concat(actionColumnDataSource),
+      dataSource: [...composedDefaultActionColumnButtons, ...customActionColumnDataSource],
     };
     setActionColumnButtons(_actionColumnButtons);
   }, [propActionColumnButtons, dataSource]);

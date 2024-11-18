@@ -218,6 +218,20 @@ export const editTableMeta: IComponentDescription = {
           actionColumnButtons: {
             text: true,
             visibleButtonCount: 3,
+            dataSource: [
+              {
+                type: 'primary',
+                children: '编辑',
+                deletable: false,
+                operation: 'edit'
+              },
+              {
+                type: 'primary',
+                children: '删除',
+                deletable: false,
+                operation: 'delete'
+              },
+            ],
           },
           actionBarButtons: {
             dataSource: [

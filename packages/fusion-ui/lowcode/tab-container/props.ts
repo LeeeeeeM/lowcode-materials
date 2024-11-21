@@ -20,7 +20,13 @@ export default [
                 {
                   name: 'primaryKey',
                   title: '项目编号',
-                  condition: () => false,
+                  // condition: () => false,
+                  setter: 'StringSetter',
+                },
+                {
+                  name: 'key',
+                  title: 'tab标记key',
+                  // condition: () => false,
                   setter: 'StringSetter',
                 },
                 {
@@ -154,6 +160,13 @@ export default [
           { title: '下拉', value: 'dropdown' },
         ],
       },
+    },
+  },
+  {
+    name: 'activeKey',
+    title: '激活的pane对应的 Key',
+    setter: {
+      componentName: 'StringSetter',
     },
   },
   {

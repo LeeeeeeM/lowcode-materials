@@ -188,15 +188,12 @@ const tabItemMeta = {
       },
     ],
     supports: {
+      style: true,
       events: [
         {
           name: 'onClick',
-        },
-        {
-          name: 'onChange',
-        },
-      ],
-      style: true,
+        }
+      ]
     },
     component: {
       isContainer: true,
@@ -240,6 +237,20 @@ const TabContainerMeta: ComponentMetadata[] = [
       props,
       supports: {
         style: true,
+        events: [
+          {
+            name: 'onClick',
+          },
+          {
+            name: 'onChange',
+          },
+          {
+            name: 'onClose',
+          },
+          {
+            name: 'onAdd',
+          },
+        ],
       },
     },
     snippets,

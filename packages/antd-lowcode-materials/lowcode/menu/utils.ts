@@ -18,6 +18,7 @@ export const itemsExtraProps = {
     return map.length === 0 ? fieldValue : map;
   },
   setValue(target, value) {
+    console.log(value, 'xxxx')
     const { node } = target;
     const map = {};
 

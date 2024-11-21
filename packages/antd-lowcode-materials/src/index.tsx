@@ -48,7 +48,8 @@ export { List } from 'antd';
 
 export { message } from 'antd';
 
-export { Menu } from 'antd';
+// export { Menu } from 'antd';
+export { default as Menu } from './components/menu';
 
 export { Mentions } from 'antd';
 

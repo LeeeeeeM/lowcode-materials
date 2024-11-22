@@ -20,7 +20,7 @@ export default [
                 {
                   name: 'primaryKey',
                   title: '项目编号',
-                  // condition: () => false,
+                  condition: () => false,
                   setter: 'StringSetter',
                 },
                 {
@@ -63,6 +63,7 @@ export default [
             : child.id;
           return {
             primaryKey,
+            key: child.getPropValue('key'),
             title: child.getPropValue('title') || '标签项',
             closeable: child.getPropValue('closeable'),
             disabled: child.getPropValue('disabled'),
@@ -85,6 +86,7 @@ export default [
           (child) => {
             const primaryKey = String(child.getPropValue('primaryKey'));
             if (Object.hasOwnProperty.call(map, primaryKey)) {
+              child.setPropValue('key', map[primaryKey].key)
               child.setPropValue('title', map[primaryKey].title);
               child.setPropValue('closeable', map[primaryKey].closeable);
               child.setPropValue('disabled', map[primaryKey].disabled);
@@ -166,7 +168,7 @@ export default [
     name: 'activeKey',
     title: '激活的pane对应的 Key',
     setter: {
-      componentName: 'StringSetter',
+      componentName: 'JsonSetter',
     },
   },
   {

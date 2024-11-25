@@ -1,6 +1,9 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentBoxName = `${CURRENT_COMP_PREFIX}Box`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Box',
+  componentName: componentBoxName,
   title: '容器',
   category: '布局容器类',
   icon: 'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_table.png',
@@ -10,7 +13,7 @@ module.exports = {
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Box',
+    exportName: componentBoxName,
     main: '',
     destructuring: true,
     subName: '',
@@ -606,7 +609,7 @@ module.exports = {
       screenshot:
         'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_table.png',
       schema: {
-        componentName: 'Box',
+        componentName: componentBoxName,
         props: {},
       },
     },

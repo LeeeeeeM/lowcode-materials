@@ -1,13 +1,17 @@
-module.exports = {
+import snippets from './snippets';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentCheckboxName = `${CURRENT_COMP_PREFIX}Checkbox`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Checkbox',
+  componentName: componentCheckboxName,
   title: '复选按钮',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Checkbox',
+    exportName: componentCheckboxName,
     main: '',
     destructuring: true,
     subName: '',
@@ -188,5 +192,5 @@ module.exports = {
   },
   icon: '',
   category: '信息输入',
-  snippets: require('./snippets'),
+  snippets,
 };

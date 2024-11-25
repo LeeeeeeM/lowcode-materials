@@ -1,3 +1,6 @@
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentTypographyName = `${CURRENT_COMP_PREFIX}Typography`;
+
 export default [
   {
     group: 'FUSION基础组件',
@@ -48,7 +51,7 @@ export default [
     npm: {
       package: '@alilc/lowcode-materials',
       version: '{{version}}',
-      exportName: 'Typography',
+      exportName: componentTypographyName,
       main: '',
       destructuring: true,
       subName: 'Text',

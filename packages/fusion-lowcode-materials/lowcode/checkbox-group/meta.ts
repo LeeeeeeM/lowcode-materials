@@ -1,13 +1,18 @@
-module.exports = {
+import snippets from './snippets';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentCheckboxName = `${CURRENT_COMP_PREFIX}Checkbox`;
+const componentCheckboxGroupName = `${CURRENT_COMP_PREFIX}CheckboxGroup`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'CheckboxGroup',
+  componentName: componentCheckboxGroupName,
   title: '复选按钮组',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Checkbox',
+    exportName: componentCheckboxName,
     main: '',
     destructuring: true,
     subName: 'Group',
@@ -241,4 +246,5 @@ module.exports = {
   },
   icon: '',
   category: '信息输入',
+  snippets
 };

@@ -1,10 +1,14 @@
-module.exports = [
+import { CURRENT_COMP_PREFIX } from '../_common'
+
+const componentToastName = `${CURRENT_COMP_PREFIX}Message`;
+
+export default [
   {
     title: '面包片',
     screenshot:
       'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_message.png',
     schema: {
-      componentName: 'Message',
+      componentName: componentToastName,
       props: {
         title: 'Toast',
         type: 'success',

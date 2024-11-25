@@ -1,13 +1,17 @@
-module.exports = {
+import snippets from './snippets';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentAlertName = `${CURRENT_COMP_PREFIX}Message`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Message',
+  componentName: componentAlertName,
   title: '提示',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Message',
+    exportName: componentAlertName,
     main: '',
     destructuring: true,
     subName: '',
@@ -218,5 +222,5 @@ module.exports = {
   },
   icon: '',
   category: '信息反馈',
-  snippets: require('./snippets'),
+  snippets
 };

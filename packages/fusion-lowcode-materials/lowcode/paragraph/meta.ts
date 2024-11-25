@@ -1,13 +1,17 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentTypographyName = `${CURRENT_COMP_PREFIX}Typography`;
+const componentParagraphName = `${CURRENT_COMP_PREFIX}Paragraph`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Paragraph',
+  componentName: componentParagraphName,
   title: 'Paragraph',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Typography',
+    exportName: componentTypographyName,
     main: '',
     destructuring: true,
     subName: 'Paragraph',

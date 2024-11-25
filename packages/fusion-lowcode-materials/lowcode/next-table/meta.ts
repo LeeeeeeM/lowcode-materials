@@ -1,13 +1,17 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentBoxName = `${CURRENT_COMP_PREFIX}Box`;
+const componentNextTableName = `${CURRENT_COMP_PREFIX}NextTable`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'NextTable',
+  componentName: componentNextTableName,
   title: '表格',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: 'latest',
-    exportName: 'NextTable',
+    exportName: componentNextTableName,
     main: 'lib/index.js',
     destructuring: true,
     subName: '',
@@ -711,7 +715,7 @@ module.exports = {
                                 params: [''],
                                 value: [
                                   {
-                                    componentName: 'Box',
+                                    componentName: componentBoxName,
                                   },
                                 ],
                               },

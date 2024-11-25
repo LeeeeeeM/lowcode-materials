@@ -1,9 +1,12 @@
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentInputName = `${CURRENT_COMP_PREFIX}Input`;
+
 export default [
   {
     title: '输入框',
     screenshot: 'https://img.alicdn.com/tfs/TB1ysp3u8v0gK0jSZKbXXbK2FXa-112-64.png',
     schema: {
-      componentName: 'Input',
+      componentName: componentInputName,
       props: {
         hasBorder: true,
         size: 'medium',
@@ -16,7 +19,7 @@ export default [
     title: '密码框',
     screenshot: 'https://img.alicdn.com/tfs/TB1ikF3u7P2gK0jSZPxXXacQpXa-112-64.png',
     schema: {
-      componentName: 'Input.Password',
+      componentName: `${componentInputName}.Password`,
       props: {
         hasBorder: true,
         size: 'medium',
@@ -29,7 +32,7 @@ export default [
     screenshot:
       'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_input.png',
     schema: {
-      componentName: 'Input.TextArea',
+      componentName: `${componentInputName}.TextArea`,
       props: {
         hasBorder: true,
         size: 'medium',

@@ -1,13 +1,16 @@
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentRadioName = `${CURRENT_COMP_PREFIX}Radio`;
+
 export default {
   group: 'FUSION基础组件',
-  componentName: 'Radio.Group',
+  componentName: `${componentRadioName}.Group`,
   title: '单选框组',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Radio',
+    exportName: componentRadioName,
     main: '',
     destructuring: true,
     subName: 'Group',

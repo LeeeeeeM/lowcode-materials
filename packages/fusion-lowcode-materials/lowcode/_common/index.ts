@@ -1,0 +1,1 @@
+export const CURRENT_COMP_PREFIX = 'FUSION_'

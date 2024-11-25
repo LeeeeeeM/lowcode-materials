@@ -1,10 +1,13 @@
-module.exports = [
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentAlertName = `${CURRENT_COMP_PREFIX}Message`;
+
+export default [
   {
     title: '提示',
     screenshot:
       'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_message.png',
     schema: {
-      componentName: 'Message',
+      componentName: componentAlertName,
       props: {
         title: 'Alert',
         type: 'warning',

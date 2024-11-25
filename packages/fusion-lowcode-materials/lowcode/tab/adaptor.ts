@@ -1,4 +1,7 @@
 import parseData from '../utils/parse-data';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentTypographyName = `${CURRENT_COMP_PREFIX}Typography`;
+const componentTabName = `${CURRENT_COMP_PREFIX}Tab`;
 
 export const createDataSource = (data: any, props) => {
   const list = parseData(data, { parseContent: true });
@@ -22,7 +25,7 @@ export const createDataSource = (data: any, props) => {
               },
             };
           return {
-            componentName: 'Typography.Text',
+            componentName: `${componentTypographyName}.Text`,
             props: {
               children: value,
               style: {
@@ -46,7 +49,7 @@ function createContents(dataSource) {
   //dataSouce.map(item => <Step.Item key={item.key} title={item.title} content={item.content} icon={item.icon} percent={item.percent} disabled={item.disabled}/>)
   return dataSource.map((item) => {
     return {
-      componentName: 'Tab.Item',
+      componentName: `${componentTabName}.Item`,
       props: item,
     };
   });

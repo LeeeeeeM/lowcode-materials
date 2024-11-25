@@ -1,13 +1,17 @@
-module.exports = {
+import snippets from './snippets';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentCascaderName = `${CURRENT_COMP_PREFIX}Cascader`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Cascader',
+  componentName: componentCascaderName,
   title: '级联',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Cascader',
+    exportName: componentCascaderName,
     main: '',
     destructuring: true,
     subName: '',
@@ -194,4 +198,5 @@ module.exports = {
   },
   icon: '',
   category: '信息输入',
+  snippets
 };

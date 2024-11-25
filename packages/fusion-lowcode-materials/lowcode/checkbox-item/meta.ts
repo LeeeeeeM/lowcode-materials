@@ -1,4 +1,9 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentMenuName = `${CURRENT_COMP_PREFIX}Menu`;
+const componentSubMenuName = `${CURRENT_COMP_PREFIX}SubMenu`;
+const componentMenuButtonName = `${CURRENT_COMP_PREFIX}MenuButton`;
+
+export default {
   group: 'FUSION基础组件',
   componentName: 'CheckboxItem',
   title: '复选框',
@@ -7,7 +12,7 @@ module.exports = {
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Menu',
+    exportName: componentMenuName,
     main: '',
     destructuring: true,
     subName: 'CheckboxItem',
@@ -51,7 +56,7 @@ module.exports = {
     component: {
       isContainer: true,
       nestingRule: {
-        parentWhitelist: ['Menu', 'SubMenu', 'Menu.Group', 'MenuButton'],
+        parentWhitelist: [componentMenuName, componentSubMenuName, `${componentMenuName}.Group`, componentMenuButtonName],
       },
     },
   },

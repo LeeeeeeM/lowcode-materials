@@ -1,11 +1,14 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentTableName = `${CURRENT_COMP_PREFIX}Table`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Table.Column',
+  componentName: `${componentTableName}.Column`,
   title: 'Table.Column',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Table',
+    exportName: componentTableName,
     main: '',
     destructuring: true,
     subName: 'Column',

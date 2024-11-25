@@ -1,13 +1,17 @@
-module.exports = {
+import snippets from './snippets';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentRadioName = `${CURRENT_COMP_PREFIX}Radio`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Radio',
+  componentName: componentRadioName,
   title: '单选框',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Radio',
+    exportName: componentRadioName,
     main: '',
     destructuring: true,
     subName: '',
@@ -91,5 +95,5 @@ module.exports = {
   ],
   icon: '',
   category: '信息输入',
-  snippets: require('./snippets'),
+  snippets,
 };

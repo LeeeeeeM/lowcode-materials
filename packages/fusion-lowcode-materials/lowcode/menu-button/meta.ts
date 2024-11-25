@@ -1,15 +1,18 @@
 import { getDataFromPlainText } from './adaptor';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentMenuButtonName = `${CURRENT_COMP_PREFIX}MenuButton`;
+
 
 export default {
   group: 'FUSION基础组件',
-  componentName: 'MenuButton',
+  componentName: componentMenuButtonName,
   title: '分隔按钮',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'MenuButton',
+    exportName: componentMenuButtonName,
     main: '',
     destructuring: true,
     subName: '',

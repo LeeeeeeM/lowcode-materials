@@ -1,21 +1,16 @@
 import {CURRENT_COMP_PREFIX}  from '../_common';
-const componentCascaderSelectName = `${CURRENT_COMP_PREFIX}CascaderSelect`;
+const componentCascaderName = `${CURRENT_COMP_PREFIX}Cascader`;
 
 export default [
   {
-    title: '级联选择器',
+    title: '级联',
     screenshot:
-      'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_cascader-select.png',
+      'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_cascader.png',
     schema: {
-      componentName: componentCascaderSelectName,
+      componentName: componentCascaderName,
       props: {
         prefix: 'next-',
-        size: 'medium',
-        hasArrow: true,
-        hasBorder: true,
         expandTriggerType: 'click',
-        resultAutoWidth: true,
-        notFoundContent: 'Not Found',
         dataSource: [
           {
             value: '2974',

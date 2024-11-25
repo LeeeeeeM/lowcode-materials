@@ -1,11 +1,15 @@
-module.exports = {
-  componentName: 'Image',
+import snippets from './snippets';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentImageName = `${CURRENT_COMP_PREFIX}Image`;
+
+export default {
+  componentName: componentImageName,
   group: 'FUSION基础组件',
   title: '图片',
   npm: {
     package: '@alilc/lowcode-materials',
     version: 'latest',
-    exportName: 'Image',
+    exportName: componentImageName,
     main: '',
     destructuring: true,
     subName: '',
@@ -57,5 +61,5 @@ module.exports = {
   ],
   icon: 'https://img.alicdn.com/imgextra/i3/O1CN01tnhXhk1GUIFhsXwzA_!!6000000000625-55-tps-56-56.svg',
   category: '基础元素',
-  snippets: require('./snippets'),
+  snippets,
 };

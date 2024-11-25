@@ -1,13 +1,16 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentCollapseName = `${CURRENT_COMP_PREFIX}Collapse`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Collapse',
+  componentName: componentCollapseName,
   title: '折叠面板',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Collapse',
+    exportName: componentCollapseName,
     main: '',
     destructuring: true,
     subName: '',

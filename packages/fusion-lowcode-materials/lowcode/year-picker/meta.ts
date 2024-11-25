@@ -1,4 +1,7 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentDatePickerName = `${CURRENT_COMP_PREFIX}DatePicker`;
+
+export default {
   group: 'FUSION基础组件',
   componentName: 'YearPicker',
   title: 'YearPicker',
@@ -7,7 +10,7 @@ module.exports = {
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'DatePicker',
+    exportName: componentDatePickerName,
     main: '',
     destructuring: true,
     subName: 'YearPicker',

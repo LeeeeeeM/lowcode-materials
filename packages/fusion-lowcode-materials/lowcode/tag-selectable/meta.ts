@@ -1,13 +1,16 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentTagName = `${CURRENT_COMP_PREFIX}Tag`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Tag.Selectable',
+  componentName: `${componentTagName}.Selectable`,
   title: '可选中标签',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Tag',
+    exportName: componentTagName,
     main: '',
     destructuring: true,
     subName: 'Selectable',

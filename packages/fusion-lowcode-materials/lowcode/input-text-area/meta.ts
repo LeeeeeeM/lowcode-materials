@@ -1,13 +1,16 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentInputName = `${CURRENT_COMP_PREFIX}Input`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Input.TextArea',
+  componentName: `${componentInputName}.TextArea`,
   title: '多行文本框',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Input',
+    exportName: componentInputName,
     main: '',
     destructuring: true,
     subName: 'TextArea',

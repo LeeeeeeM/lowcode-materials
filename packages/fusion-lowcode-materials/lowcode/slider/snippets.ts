@@ -1,10 +1,14 @@
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentImageName = `${CURRENT_COMP_PREFIX}Image`;
+const componentSliderName = `${CURRENT_COMP_PREFIX}Slider`;
+
 export default [
   {
     title: '图片轮播',
     screenshot:
       'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_slider.png',
     schema: {
-      componentName: 'Slider',
+      componentName: componentSliderName,
       props: {
         prefix: 'next-',
         animation: 'slide',
@@ -34,25 +38,25 @@ export default [
       },
       children: [
         {
-          componentName: 'Image',
+          componentName: componentImageName,
           props: {
             src: 'https://img.alicdn.com/tps/TB1bewbNVXXXXc5XXXXXXXXXXXX-1000-300.png',
           },
         },
         {
-          componentName: 'Image',
+          componentName: componentImageName,
           props: {
             src: 'https://img.alicdn.com/tps/TB1xuUcNVXXXXcRXXXXXXXXXXXX-1000-300.jpg',
           },
         },
         {
-          componentName: 'Image',
+          componentName: componentImageName,
           props: {
             src: 'https://img.alicdn.com/tps/TB1ikP.NVXXXXaYXpXXXXXXXXXX-1000-300.jpg',
           },
         },
         {
-          componentName: 'Image',
+          componentName: componentImageName,
           props: {
             src: 'https://img.alicdn.com/tps/TB1s1_JNVXXXXbhaXXXXXXXXXXX-1000-300.jpg',
           },

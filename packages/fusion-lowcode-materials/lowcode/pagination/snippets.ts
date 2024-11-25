@@ -1,10 +1,13 @@
-module.exports = [
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentPaginationName = `${CURRENT_COMP_PREFIX}Pagination`;
+
+export default [
   {
     title: '翻页器',
     screenshot:
       'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_pagination.png',
     schema: {
-      componentName: 'Pagination',
+      componentName: componentPaginationName,
       props: {
         prefix: 'next-',
         type: 'normal',

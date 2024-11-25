@@ -1,15 +1,17 @@
 import snippets from './snippets';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentTimePickerName = `${CURRENT_COMP_PREFIX}TimePicker`;
 
 export default {
   group: 'FUSION基础组件',
-  componentName: 'TimePicker',
+  componentName: componentTimePickerName,
   title: '时间选择框',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'TimePicker',
+    exportName: componentTimePickerName,
     main: '',
     destructuring: true,
     subName: '',

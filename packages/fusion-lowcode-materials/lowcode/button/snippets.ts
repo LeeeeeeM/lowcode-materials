@@ -1,4 +1,9 @@
 import { getDataFromPlainText } from '../split-button/adaptor';
+import { CURRENT_COMP_PREFIX } from '../_common';
+const componentMenuButtonName = `${CURRENT_COMP_PREFIX}MenuButton`;
+const componentSplitButtonName = `${CURRENT_COMP_PREFIX}SplitButton`;
+const componentButtonName = `${CURRENT_COMP_PREFIX}Button`;
+
 
 const plainData = 'Edit Document\n\tUndo\n\tRedo\n\tCut\n\tCopy\n\tPaste';
 const { label, children, selectedKeys } = getDataFromPlainText(plainData);
@@ -25,7 +30,7 @@ const snippets = [
     screenshot:
       'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_button.png',
     schema: {
-      componentName: 'Button',
+      componentName: componentButtonName,
       props: {
         prefix: 'next-',
         type: 'primary',
@@ -41,7 +46,7 @@ const snippets = [
     screenshot:
       'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_split-button.png',
     schema: {
-      componentName: 'SplitButton',
+      componentName: componentSplitButtonName,
       props: splitButtonProps,
       children,
     },
@@ -51,7 +56,7 @@ const snippets = [
     screenshot:
       'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_split-button.png',
     schema: {
-      componentName: 'MenuButton',
+      componentName: componentMenuButtonName,
       props: menuButtonProps,
       children,
     },
@@ -60,11 +65,11 @@ const snippets = [
     title: '按钮组',
     screenshot: 'https://img.alicdn.com/tfs/TB1t6dhvV67gK0jSZPfXXahhFXa-310-122.png',
     schema: {
-      componentName: 'Button.Group',
+      componentName: `${componentButtonName}.Group`,
       props: {},
       children: [
         {
-          componentName: 'Button',
+          componentName: componentButtonName,
           props: {
             type: 'primary',
             style: {
@@ -83,7 +88,7 @@ const snippets = [
           ],
         },
         {
-          componentName: 'Button',
+          componentName: componentButtonName,
           props: {
             type: 'normal',
             style: {

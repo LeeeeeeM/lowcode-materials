@@ -1,10 +1,13 @@
-module.exports = [
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentSelectName = `${CURRENT_COMP_PREFIX}Select`;
+
+export default [
   {
     title: '选择器',
     screenshot:
       'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_select.png',
     schema: {
-      componentName: 'Select',
+      componentName: componentSelectName,
       props: {
         mode: 'single',
         hasArrow: true,

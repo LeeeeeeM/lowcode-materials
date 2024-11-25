@@ -1,15 +1,17 @@
 import snippets from './snippets';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentSliderName = `${CURRENT_COMP_PREFIX}Slider`;
 
 export default {
   group: 'FUSION基础组件',
-  componentName: 'Slider',
+  componentName: componentSliderName,
   title: '图片轮播',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Slider',
+    exportName: componentSliderName,
     main: '',
     destructuring: true,
     subName: '',

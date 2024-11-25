@@ -1,15 +1,17 @@
 import snippets from './snippets';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentDatePickerName = `${CURRENT_COMP_PREFIX}DatePicker`;
 
 export default {
   group: 'FUSION基础组件',
-  componentName: 'DatePicker',
+  componentName: componentDatePickerName,
   title: '日期选择框',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'DatePicker',
+    exportName: componentDatePickerName,
     main: '',
     destructuring: true,
     subName: '',

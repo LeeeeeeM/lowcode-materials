@@ -1,13 +1,17 @@
-module.exports = {
+import snippets from './snippets';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentBreadcrumbName = `${CURRENT_COMP_PREFIX}Breadcrumb`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Breadcrumb',
+  componentName: componentBreadcrumbName,
   title: '面包屑',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Breadcrumb',
+    exportName: componentBreadcrumbName,
     main: '',
     destructuring: true,
     subName: '',
@@ -29,7 +33,7 @@ module.exports = {
         type: 'instanceOf',
         value: 'node',
       },
-      description: '面包屑子节点，需传入 Breadcrumb.Item',
+      description: `面包屑子节点，需传入 ${componentBreadcrumbName}.Item`,
     },
     {
       name: 'maxNode',
@@ -76,7 +80,7 @@ module.exports = {
     component: {
       isContainer: true,
       nestingRule: {
-        childWhitelist: ['Breadcrumb.Item'],
+        childWhitelist: [`${componentBreadcrumbName}.Item`],
       },
     },
     props: [
@@ -96,7 +100,7 @@ module.exports = {
         supportVariable: true,
       },
       {
-        name: 'Breadcrumb.Item',
+        name: `${componentBreadcrumbName}.Item`,
         title: '面包屑项',
         setter: {
           componentName: 'ArraySetter',
@@ -219,7 +223,7 @@ module.exports = {
                 for (const primaryKey in map) {
                   if (Object.hasOwnProperty.call(map, primaryKey)) {
                     items.push({
-                      componentName: 'Breadcrumb.Item',
+                      componentName: `${componentBreadcrumbName}.Item`,
                       props: map[primaryKey],
                     });
                   }
@@ -252,5 +256,5 @@ module.exports = {
   },
   icon: '',
   category: '引导',
-  snippets: require('./snippets'),
+  snippets,
 };

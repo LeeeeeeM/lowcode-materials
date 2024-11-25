@@ -1,13 +1,17 @@
-module.exports = {
+import snippets from './snippets';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentTimelineName = `${CURRENT_COMP_PREFIX}Timeline`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Timeline',
+  componentName: componentTimelineName,
   title: '时间轴',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Timeline',
+    exportName: componentTimelineName,
     main: '',
     destructuring: true,
     subName: '',
@@ -46,7 +50,7 @@ module.exports = {
     component: {
       isContainer: true,
       nestingRule: {
-        childWhitelist: ['Timeline.Item'],
+        childWhitelist: [`${componentTimelineName}.Item`],
       },
     },
     props: [
@@ -177,7 +181,7 @@ module.exports = {
                 for (const primaryKey in map) {
                   if (Object.hasOwnProperty.call(map, primaryKey)) {
                     items.push({
-                      componentName: 'Timeline.Item',
+                      componentName: `${componentTimelineName}.Item`,
                       props: map[primaryKey],
                     });
                   }
@@ -201,5 +205,5 @@ module.exports = {
   },
   icon: '',
   category: '信息展示',
-  snippets: require('./snippets'),
+  snippets,
 };

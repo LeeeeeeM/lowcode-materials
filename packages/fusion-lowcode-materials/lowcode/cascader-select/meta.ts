@@ -1,13 +1,17 @@
-module.exports = {
+import snippets from './snippets';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentCascaderSelectName = `${CURRENT_COMP_PREFIX}CascaderSelect`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'CascaderSelect',
+  componentName: componentCascaderSelectName,
   title: '级联选择器',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'CascaderSelect',
+    exportName: componentCascaderSelectName,
     main: '',
     destructuring: true,
     subName: '',
@@ -434,5 +438,5 @@ module.exports = {
   },
   icon: '',
   category: '信息输入',
-  snippets: require('./snippets'),
+  snippets,
 };

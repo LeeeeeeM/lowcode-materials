@@ -1,13 +1,18 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentSubMenuName = `${CURRENT_COMP_PREFIX}SubMenu`;
+const componentMenuName = `${CURRENT_COMP_PREFIX}Menu`;
+const componentMenuButtonName = `${CURRENT_COMP_PREFIX}MenuButton`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Menu.Divider',
+  componentName: `${componentMenuName}.Divider`,
   title: '菜单分隔线',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Menu',
+    exportName: componentMenuName,
     main: '',
     destructuring: true,
     subName: 'Divider',
@@ -22,7 +27,7 @@ module.exports = {
     component: {
       isContainer: false,
       nestingRule: {
-        parentWhitelist: ['Menu', 'SubMenu', 'Menu.Group', 'MenuButton'],
+        parentWhitelist: [componentMenuName, componentSubMenuName, `${componentMenuName}.Group`, componentMenuButtonName],
       },
     },
     advanced: {

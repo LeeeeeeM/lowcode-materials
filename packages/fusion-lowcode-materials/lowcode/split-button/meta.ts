@@ -1,15 +1,17 @@
 import { getDataFromPlainText } from './adaptor';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentSplitButtonName = `${CURRENT_COMP_PREFIX}SplitButton`;
 
 export default {
   group: 'FUSION基础组件',
-  componentName: 'SplitButton',
+  componentName: componentSplitButtonName,
   title: '分隔按钮',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'SplitButton',
+    exportName: componentSplitButtonName,
     main: '',
     destructuring: true,
     subName: '',

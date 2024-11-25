@@ -1,8 +1,10 @@
 import snippets from './snippets';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentButtonName = `${CURRENT_COMP_PREFIX}Button`;
 
 export default {
   group: 'FUSION基础组件',
-  componentName: 'Button',
+  componentName: componentButtonName,
   title: '按钮',
   icon: 'https://img.alicdn.com/tfs/TB1rT0gPQL0gK0jSZFAXXcA9pXa-200-200.svg',
   docUrl: '',
@@ -10,7 +12,7 @@ export default {
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Button',
+    exportName: componentButtonName,
     main: '',
     destructuring: true,
     subName: '',

@@ -1,13 +1,17 @@
-module.exports = {
+import snippets from './snippets';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentBadgeName = `${CURRENT_COMP_PREFIX}Badge`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Badge',
+  componentName: componentBadgeName,
   title: '徽标数',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Badge',
+    exportName: componentBadgeName,
     main: '',
     destructuring: true,
     subName: '',
@@ -91,5 +95,5 @@ module.exports = {
   },
   icon: '',
   category: '信息展示',
-  snippets: require('./snippets'),
+  snippets,
 };

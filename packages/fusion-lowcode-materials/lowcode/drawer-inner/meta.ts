@@ -1,13 +1,16 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentDrawerName = `${CURRENT_COMP_PREFIX}Drawer`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Drawer.Inner',
+  componentName: `${componentDrawerName}.Inner`,
   title: 'Drawer.Inner',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Drawer',
+    exportName: componentDrawerName,
     main: '',
     destructuring: true,
     subName: 'Inner',

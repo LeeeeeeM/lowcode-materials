@@ -1,13 +1,16 @@
-module.exports = {
+import { CURRENT_COMP_PREFIX } from '../_common';
+const componentButtonName = `${CURRENT_COMP_PREFIX}Button`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Button.Group',
+  componentName: `${componentButtonName}.Group`,
   title: '按钮组',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Button',
+    exportName: componentButtonName,
     main: '',
     destructuring: true,
     subName: 'Group',
@@ -49,7 +52,7 @@ module.exports = {
     component: {
       isContainer: true,
       nestingRule: {
-        childWhitelist: ['Button'],
+        childWhitelist: [componentButtonName],
       },
     },
     props: [

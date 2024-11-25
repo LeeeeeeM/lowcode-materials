@@ -1,13 +1,17 @@
-module.exports = {
+import snippets from './snippets';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentDividerName = `${CURRENT_COMP_PREFIX}Divider`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Divider',
+  componentName: componentDividerName,
   title: '分隔符',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Divider',
+    exportName: componentDividerName,
     main: '',
     destructuring: true,
     subName: '',
@@ -74,5 +78,5 @@ module.exports = {
   ],
   icon: '',
   category: '通用',
-  snippets: require('./snippets'),
+  snippets,
 };

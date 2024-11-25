@@ -1,13 +1,16 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentListName = `${CURRENT_COMP_PREFIX}List`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'List.Item',
+  componentName: `${componentListName}.Item`,
   title: '列表项',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'List',
+    exportName: componentListName,
     main: '',
     destructuring: true,
     subName: 'Item',

@@ -1,10 +1,13 @@
 import * as moment from 'moment';
+import snippets from './snippets';
+import { CURRENT_COMP_PREFIX } from '../_common';
+const componentCalendarName = `${CURRENT_COMP_PREFIX}Calendar`;
 
 moment?.locale?.('zh-cn');
 
 export default {
   group: 'FUSION基础组件',
-  componentName: 'Calendar',
+  componentName: componentCalendarName,
   title: '日历',
   docUrl: '',
   screenshot:
@@ -12,7 +15,7 @@ export default {
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Calendar',
+    exportName: componentCalendarName,
     main: '',
     destructuring: true,
     subName: '',
@@ -156,5 +159,5 @@ export default {
   },
   icon: 'https://img.alicdn.com/imgextra/i3/O1CN01IAguy71sM0UGdpChd_!!6000000005751-55-tps-56-56.svg',
   category: '信息展示',
-  snippets: require('./snippets'),
+  snippets,
 };

@@ -1,4 +1,7 @@
 import parseData from '../utils/parse-data';
+import { CURRENT_COMP_PREFIX } from '../_common';
+const componentSubMenuName = `${CURRENT_COMP_PREFIX}SubMenu`;
+const componentMenuName = `${CURRENT_COMP_PREFIX}Menu`;
 
 export const createDataSource = (
   list,
@@ -95,7 +98,7 @@ const createMenuItem = (item) => {
     //   </Menu.SubMenu>
     // );
     return {
-      componentName: 'SubMenu',
+      componentName: componentSubMenuName,
       props: {
         key: item.key,
         disabled: item.state === 'disabled',
@@ -112,7 +115,7 @@ const createMenuItem = (item) => {
 
   // return <Menu.Item key={item.key} checked={item.state === 'active'} disabled={item.state === 'disabled'} children={item.value.map(({ type, value }, index) => type === 'icon' ? <Icon key={`icon_${index}`} type={value} size="small" style={{ marginRight: '4px' }} /> : value)} />;
   return {
-    componentName: 'Menu.Item',
+    componentName: `${componentMenuName}.Item`,
     props: {
       key: item.key,
       checked: item.state === 'active',
@@ -148,7 +151,7 @@ export const createContents = (array = []) => {
     if (item.type === 'group' && item.children.length > 0) {
       // return <Menu.Group key={item.key} label={item.value}>{item.children.map(it => createMenuItem(it))}</Menu.Group>;
       return {
-        componentName: 'Menu.Group',
+        componentName: `${componentMenuName}.Group`,
         props: {
           key: item.key,
           label: item.value,
@@ -160,7 +163,7 @@ export const createContents = (array = []) => {
     if (item.type === 'divider') {
       // return <Menu.Divider key={item.key}/>;
       return {
-        componentName: 'Menu.Divider',
+        componentName: `${componentMenuName}.Divider`,
         props: {
           key: item.key,
         },

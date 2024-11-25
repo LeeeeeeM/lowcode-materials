@@ -1,13 +1,16 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentDropdownName = `${CURRENT_COMP_PREFIX}Dropdown`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Dropdown',
+  componentName: componentDropdownName,
   title: '下拉菜单',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Dropdown',
+    exportName: componentDropdownName,
     main: '',
     destructuring: true,
     subName: '',

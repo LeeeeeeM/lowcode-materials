@@ -1,13 +1,16 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentMenuName = `${CURRENT_COMP_PREFIX}Menu`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Menu',
+  componentName: componentMenuName,
   title: '菜单',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Menu',
+    exportName: componentMenuName,
     main: '',
     destructuring: true,
     subName: '',

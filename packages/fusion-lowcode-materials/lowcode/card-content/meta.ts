@@ -1,4 +1,7 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentCardName = `${CURRENT_COMP_PREFIX}Card`;
+
+export default {
   group: 'FUSION基础组件',
   componentName: 'CardContent',
   title: 'CardContent',
@@ -7,7 +10,7 @@ module.exports = {
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Card',
+    exportName: componentCardName,
     main: '',
     destructuring: true,
     subName: 'Content',

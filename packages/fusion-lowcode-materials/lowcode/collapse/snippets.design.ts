@@ -1,4 +1,6 @@
 import parseData from '../utils/parse-data';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentCollapseName = `${CURRENT_COMP_PREFIX}Collapse`;
 
 const plainData =
   '*Panel Header 1\n\tPeople always make mistakes, frustrated, nerve-racking, but cannot remain stagnant.\nPanel Header 2\n\tPeople always make mistakes, frustrated, nerve-racking, but cannot remain stagnant.\nPanel Header 3\n\tPeople always make mistakes, frustrated, nerve-racking, but cannot remain stagnant.\n';
@@ -23,7 +25,7 @@ export default [
     screenshot:
       'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_dialog.png',
     schema: {
-      componentName: 'Collapse',
+      componentName: componentCollapseName,
       props: {
         accordion: false,
         plainData,

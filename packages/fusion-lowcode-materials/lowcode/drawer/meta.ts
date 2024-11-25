@@ -1,13 +1,17 @@
-module.exports = {
+import snippets from './snippets';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentDrawerName = `${CURRENT_COMP_PREFIX}Drawer`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Drawer',
+  componentName: componentDrawerName,
   title: '抽屉',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Drawer',
+    exportName: componentDrawerName,
     main: '',
     destructuring: true,
     subName: '',
@@ -444,5 +448,5 @@ module.exports = {
   },
   icon: '',
   category: '布局容器类',
-  snippets: require('./snippets'),
+  snippets,
 };

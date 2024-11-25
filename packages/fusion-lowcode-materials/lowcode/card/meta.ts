@@ -1,13 +1,17 @@
-module.exports = {
+import snippets from './snippets';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentCardName = `${CURRENT_COMP_PREFIX}Card`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Card',
+  componentName: componentCardName,
   title: '卡片',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Card',
+    exportName: componentCardName,
     main: '',
     destructuring: true,
     subName: '',
@@ -103,5 +107,5 @@ module.exports = {
   },
   icon: 'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_card.png',
   category: '信息输入',
-  snippets: require('./snippets'),
+  snippets,
 };

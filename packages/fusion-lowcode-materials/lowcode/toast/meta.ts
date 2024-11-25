@@ -1,13 +1,19 @@
-module.exports = {
+import snippets from './snippets'
+
+import { CURRENT_COMP_PREFIX } from '../_common'
+
+const componentToastName = `${CURRENT_COMP_PREFIX}Message`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Message',
+  componentName: componentToastName,
   title: '面包片',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Message',
+    exportName: componentToastName,
     main: '',
     destructuring: true,
     subName: '',
@@ -218,5 +224,5 @@ module.exports = {
   },
   icon: '',
   category: '信息反馈',
-  snippets: require('./snippets'),
+  snippets,
 };

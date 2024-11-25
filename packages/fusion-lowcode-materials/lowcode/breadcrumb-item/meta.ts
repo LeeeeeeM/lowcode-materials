@@ -1,13 +1,16 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentBreadcrumbName = `${CURRENT_COMP_PREFIX}Breadcrumb`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Breadcrumb.Item',
+  componentName: `${componentBreadcrumbName}.Item`,
   title: '面包屑 Item',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Breadcrumb',
+    exportName: componentBreadcrumbName,
     main: '',
     destructuring: true,
     subName: 'Item',

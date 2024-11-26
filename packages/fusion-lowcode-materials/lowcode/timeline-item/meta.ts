@@ -1,13 +1,16 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentTimelineName = `${CURRENT_COMP_PREFIX}Timeline`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Timeline.Item',
+  componentName: `${componentTimelineName}.Item`,
   title: '时间轴项',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Timeline',
+    exportName: componentTimelineName,
     main: '',
     destructuring: true,
     subName: 'Item',
@@ -73,7 +76,7 @@ module.exports = {
     component: {
       isContainer: false,
       nestingRule: {
-        parentWhitelist: ['Timeline'],
+        parentWhitelist: [componentTimelineName],
       },
     },
     props: [

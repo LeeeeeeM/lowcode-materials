@@ -1,15 +1,17 @@
 import snippets from './snippets';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentInputName = `${CURRENT_COMP_PREFIX}Input`;
 
 export default {
   group: 'FUSION基础组件',
-  componentName: 'Input',
+  componentName: componentInputName,
   title: '输入框',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Input',
+    exportName: componentInputName,
     main: '',
     destructuring: true,
     subName: '',

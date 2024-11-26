@@ -1,15 +1,17 @@
 import snippets from './snippets';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentSwitchName = `${CURRENT_COMP_PREFIX}Switch`;
 
 export default {
   group: 'FUSION基础组件',
-  componentName: 'Switch',
+  componentName: componentSwitchName,
   title: '开关',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Switch',
+    exportName: componentSwitchName,
     main: '',
     destructuring: true,
     subName: '',

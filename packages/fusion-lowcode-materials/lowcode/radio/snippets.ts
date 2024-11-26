@@ -1,10 +1,13 @@
-module.exports = [
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentRadioName = `${CURRENT_COMP_PREFIX}Radio`;
+
+export default [
   {
     title: '单选按钮',
     screenshot:
       'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_radio.png',
     schema: {
-      componentName: 'Radio',
+      componentName: componentRadioName,
       props: {
         label: '选项一',
         value: '1',
@@ -16,7 +19,7 @@ module.exports = [
     screenshot:
       'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_radio.png',
     schema: {
-      componentName: 'Radio.Group',
+      componentName: `${componentRadioName}.Group`,
       props: {
         dataSource: [
           {

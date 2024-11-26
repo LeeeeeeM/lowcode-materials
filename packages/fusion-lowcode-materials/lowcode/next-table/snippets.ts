@@ -1,10 +1,14 @@
-module.exports = [
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentTypographyName = `${CURRENT_COMP_PREFIX}Typography`;
+const componentNextTableName = `${CURRENT_COMP_PREFIX}NextTable`;
+
+export default [
   {
     title: 'NextTable',
     screenshot:
       'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_table.png',
     schema: {
-      componentName: 'NextTable',
+      componentName: componentNextTableName,
       title: '表格',
       props: {
         setEmptyContent: true,
@@ -13,7 +17,7 @@ module.exports = [
           title: 'EmptyContent',
           value: [
             {
-              componentName: 'Typography.Text',
+              componentName: `${componentTypographyName}.Text`,
               props: {
                 children: 'No Data',
               },

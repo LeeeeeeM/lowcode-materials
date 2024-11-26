@@ -1,13 +1,16 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentFormName = `${CURRENT_COMP_PREFIX}Form`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Form.Item',
+  componentName: `${componentFormName}.Item`,
   title: '表单项',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Form',
+    exportName: componentFormName,
     main: '',
     destructuring: true,
     subName: 'Item',
@@ -328,7 +331,7 @@ module.exports = {
     component: {
       isContainer: true,
       nestingRule: {
-        parentWhitelist: ['Form'],
+        parentWhitelist: [componentFormName],
       },
     },
     supports: {

@@ -1,13 +1,16 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentInputName = `${CURRENT_COMP_PREFIX}Input`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Input.Group',
+  componentName: `${componentInputName}.Group`,
   title: 'Input.Group',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Input',
+    exportName: componentInputName,
     main: '',
     destructuring: true,
     subName: 'Group',

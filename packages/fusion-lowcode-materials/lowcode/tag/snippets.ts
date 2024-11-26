@@ -1,10 +1,13 @@
-module.exports = [
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentTagName = `${CURRENT_COMP_PREFIX}Tag`;
+
+export default [
   {
     title: '标签',
     screenshot:
       'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_tag.png',
     schema: {
-      componentName: 'Tag',
+      componentName: componentTagName,
       props: {
         prefix: 'next-',
         type: 'normal',
@@ -19,7 +22,7 @@ module.exports = [
     screenshot:
       'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_tag.png',
     schema: {
-      componentName: 'Tag.Closeable',
+      componentName: `${componentTagName}.Closeable`,
       props: {
         prefix: 'next-',
         closeArea: 'tail',
@@ -33,7 +36,7 @@ module.exports = [
     screenshot:
       'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_tag.png',
     schema: {
-      componentName: 'Tag.Selectable',
+      componentName: `${componentTagName}.Selectable`,
       props: {
         prefix: 'next-',
         children: ['Tag'],

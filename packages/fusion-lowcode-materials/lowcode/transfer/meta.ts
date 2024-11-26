@@ -1,15 +1,17 @@
 import snippets from './snippets';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentTransferName = `${CURRENT_COMP_PREFIX}Transfer`;
 
 export default {
   group: 'FUSION基础组件',
-  componentName: 'Transfer',
+  componentName: componentTransferName,
   title: '穿梭框',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Transfer',
+    exportName: componentTransferName,
     main: '',
     destructuring: true,
     subName: '',

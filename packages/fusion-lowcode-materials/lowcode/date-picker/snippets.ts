@@ -1,10 +1,13 @@
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentDatePickerName = `${CURRENT_COMP_PREFIX}DatePicker`;
+
 export default [
   {
     title: '日期选择框',
     screenshot:
       'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_date-picker.png',
     schema: {
-      componentName: 'DatePicker',
+      componentName: componentDatePickerName,
       props: {
         prefix: 'next-',
         format: 'YYYY-MM-DD',

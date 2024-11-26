@@ -1,13 +1,17 @@
-module.exports = {
+import snippets from './snippets';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentSelectName = `${CURRENT_COMP_PREFIX}Select`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Select',
+  componentName: componentSelectName,
   title: '选择器',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Select',
+    exportName: componentSelectName,
     main: '',
     destructuring: true,
     subName: '',
@@ -243,5 +247,5 @@ module.exports = {
   },
   icon: '',
   category: '信息输入',
-  snippets: require('./snippets'),
+  snippets,
 };

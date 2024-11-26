@@ -1,4 +1,7 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentDialogName = `${CURRENT_COMP_PREFIX}Dialog`;
+
+export default {
   group: 'FUSION基础组件',
   componentName: 'Inner',
   title: 'Inner',
@@ -7,7 +10,7 @@ module.exports = {
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Dialog',
+    exportName: componentDialogName,
     main: '',
     destructuring: true,
     subName: 'Inner',

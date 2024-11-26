@@ -1,13 +1,16 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentSelectName = `${CURRENT_COMP_PREFIX}Select`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Select.Option',
+  componentName: `${componentSelectName}.Option`,
   title: 'Select.Option',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Select',
+    exportName: componentSelectName,
     main: '',
     destructuring: true,
     subName: 'Option',

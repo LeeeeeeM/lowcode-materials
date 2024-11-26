@@ -1,10 +1,13 @@
-module.exports = [
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentTreeSelectName = `${CURRENT_COMP_PREFIX}TreeSelect`;
+
+export default [
   {
     title: '树型选择控件',
     screenshot:
       'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_tree-select.png',
     schema: {
-      componentName: 'TreeSelect',
+      componentName: componentTreeSelectName,
       props: {
         prefix: 'next-',
         size: 'medium',

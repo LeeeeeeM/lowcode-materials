@@ -1,10 +1,13 @@
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentParagraphName = `${CURRENT_COMP_PREFIX}Paragraph`;
+
 export default [
   {
     title: '段落',
     screenshot:
       'https://img.alicdn.com/imgextra/i3/O1CN01n5wpxc1bi862KuXFz_!!6000000003498-55-tps-50-50.svg',
     schema: {
-      componentName: 'Paragraph',
+      componentName: componentParagraphName,
       props: {
         size: 'medium',
         style: {

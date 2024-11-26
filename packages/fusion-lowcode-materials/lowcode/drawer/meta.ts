@@ -1,6 +1,14 @@
 import snippets from './snippets';
 import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentDrawerName = `${CURRENT_COMP_PREFIX}Drawer`;
+const componentTabName = `${CURRENT_COMP_PREFIX}Tab`;
+const componentCardName = `${CURRENT_COMP_PREFIX}Card`;
+const componentListName = `${CURRENT_COMP_PREFIX}List`;
+const componentMessageName = `${CURRENT_COMP_PREFIX}Message`;
+const componentFormName = `${CURRENT_COMP_PREFIX}Form`;
+const componentSliderName = `${CURRENT_COMP_PREFIX}Slider`;
+const componentBoxName = `${CURRENT_COMP_PREFIX}Box`;
+const componentNextTableName = `${CURRENT_COMP_PREFIX}NextTable`;
 
 export default {
   group: 'FUSION基础组件',
@@ -321,14 +329,14 @@ export default {
 
           if (
             [
-              'Form',
+              componentFormName,
               'ResponsiveGrid',
-              'Box',
-              'Card',
-              'List',
-              'Message',
-              'Slider',
-              'NextTable',
+              componentBoxName,
+              componentCardName,
+              componentListName,
+              componentMessageName,
+              componentSliderName,
+              componentNextTableName,
             ].includes(dragment.componentName) ||
             dragment.getPropValue('isFillContainer')
           ) {
@@ -432,7 +440,7 @@ export default {
             // 需要包裹 P 的情况：
             // 1. 如果是处于，开启了自然布局模式的容器组件中 (或者Tab里)
             // 这里的Tab主要是给纪元epoch使用的，因为他们用到了 @ali/vc-deep 的TabLayout组件，没办法在这个组件上再增加属性 isAutoContainer
-          } else if (dropTarget.getPropValue('isAutoContainer') || dropTargetName === 'Tab.Item') {
+          } else if (dropTarget.getPropValue('isAutoContainer') || dropTargetName === `${componentTabName}.Item`) {
             wrapWithP(dragment, dropTarget, dropTargetName);
 
             // 需要包裹 P 的情况：

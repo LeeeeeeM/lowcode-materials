@@ -1,5 +1,7 @@
 import parseData from '../utils/parse-data';
 import { createDataSource } from './adaptor';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentTreeName = `${CURRENT_COMP_PREFIX}Tree`;
 
 const plainData = 'children\n\t123\n\t*[ashbin]333\n\t-222';
 const keys = { selected: [], expanded: [] };
@@ -11,7 +13,7 @@ export default [
     screenshot:
       'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_tree.png',
     schema: {
-      componentName: 'Tree',
+      componentName: componentTreeName,
       props: {
         prefix: 'next-',
         selectable: true,

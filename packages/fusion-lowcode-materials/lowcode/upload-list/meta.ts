@@ -1,13 +1,16 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentUploadName = `${CURRENT_COMP_PREFIX}Upload`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Upload.List',
+  componentName: `${componentUploadName}.List`,
   title: 'Upload.List',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Upload',
+    exportName: componentUploadName,
     main: '',
     destructuring: true,
     subName: 'List',

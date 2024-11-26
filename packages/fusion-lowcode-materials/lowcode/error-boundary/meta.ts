@@ -1,4 +1,7 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentConfigProviderName = `${CURRENT_COMP_PREFIX}ConfigProvider`;
+
+export default {
   group: 'FUSION基础组件',
   componentName: 'ErrorBoundary',
   title: 'ErrorBoundary',
@@ -7,7 +10,7 @@ module.exports = {
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'ConfigProvider',
+    exportName: componentConfigProviderName,
     main: '',
     destructuring: true,
     subName: 'ErrorBoundary',

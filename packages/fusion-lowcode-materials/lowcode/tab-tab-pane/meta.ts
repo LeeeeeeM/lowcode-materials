@@ -1,13 +1,16 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentTabName = `${CURRENT_COMP_PREFIX}Tab`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Tab.TabPane',
+  componentName: `${componentTabName}.TabPane`,
   title: 'Tab.TabPane',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Tab',
+    exportName: componentTabName,
     main: '',
     destructuring: true,
     subName: 'TabPane',

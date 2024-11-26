@@ -1,9 +1,12 @@
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentTabName = `${CURRENT_COMP_PREFIX}Tab`;
+
 export default [
   {
     title: '普通型',
     screenshot: 'https://img.alicdn.com/tfs/TB1D0p2u.z1gK0jSZLeXXb9kVXa-112-64.png',
     schema: {
-      componentName: 'Tab',
+      componentName: componentTabName,
       props: {
         shape: 'pure',
         size: 'medium',
@@ -11,19 +14,19 @@ export default [
       },
       children: [
         {
-          componentName: 'Tab.Item',
+          componentName: `${componentTabName}.Item`,
           props: {
             title: 'Tab1',
           },
         },
         {
-          componentName: 'Tab.Item',
+          componentName: `${componentTabName}.Item`,
           props: {
             title: 'Tab2',
           },
         },
         {
-          componentName: 'Tab.Item',
+          componentName: `${componentTabName}.Item`,
           props: {
             title: 'Tab3',
           },

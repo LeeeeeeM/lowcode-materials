@@ -1,13 +1,17 @@
-module.exports = {
+import snippets from './snippets';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentTagName = `${CURRENT_COMP_PREFIX}Tag`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Tag',
+  componentName: componentTagName,
   title: '标签',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Tag',
+    exportName: componentTagName,
     main: '',
     destructuring: true,
   },
@@ -135,5 +139,5 @@ module.exports = {
   },
   icon: '',
   category: '信息展示',
-  snippets: require('./snippets'),
+  snippets,
 };

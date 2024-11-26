@@ -1,13 +1,16 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentTableName = `${CURRENT_COMP_PREFIX}Table`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Table',
+  componentName: componentTableName,
   title: 'Table',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Table',
+    exportName: componentTableName,
     main: '',
     destructuring: true,
     subName: '',
@@ -265,7 +268,7 @@ module.exports = {
                       {
                         name: 'componentName',
                         title: '子组件',
-                        defaultValue: 'Table.Column',
+                        defaultValue: `${componentTableName}.Column`,
                         setter: {
                           componentName: 'StringSetter',
                         },
@@ -306,7 +309,7 @@ module.exports = {
             onChange: {
               type: 'JSFunction',
               value:
-                '(val, field, editor) => {\n debugger;\n console.log(\'val\', val);//field.node.children.importSchema(val && {"componentName": "Table.Column", "props": {"type": val, "style": {"marginRight": 5}}}, true); //field.top.setPropValue(\'children\', [{"componentName": "Icon", "props": {"type": val}}, (field.top.getPropValue(\'children\') || []).slice(-1)]);\n}',
+                `(val, field, editor) => {\n debugger;\n console.log(\'val\', val);//field.node.children.importSchema(val && {"componentName": ${componentTableName}.Column, "props": {"type": val, "style": {"marginRight": 5}}}, true); //field.top.setPropValue(\'children\', [{"componentName": "Icon", "props": {"type": val}}, (field.top.getPropValue(\'children\') || []).slice(-1)]);\n}`,
             },
           },
         },

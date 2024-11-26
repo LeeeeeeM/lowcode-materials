@@ -1,5 +1,6 @@
 import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentImageName = `${CURRENT_COMP_PREFIX}Image`;
+const componentSliderName = `${CURRENT_COMP_PREFIX}Slider`;
 
 export default [
   {
@@ -7,7 +8,7 @@ export default [
     screenshot:
       'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_slider.png',
     schema: {
-      componentName: 'Slider',
+      componentName: componentSliderName,
       props: {
         prefix: 'next-',
         animation: 'slide',

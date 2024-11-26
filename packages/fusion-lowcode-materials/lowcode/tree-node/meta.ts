@@ -1,4 +1,7 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentTreeName = `${CURRENT_COMP_PREFIX}Tree`;
+
+export default {
   group: 'FUSION基础组件',
   componentName: 'TreeNode',
   title: '树形控件节点',
@@ -7,7 +10,7 @@ module.exports = {
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Tree',
+    exportName: componentTreeName,
     main: '',
     destructuring: true,
     subName: 'Node',

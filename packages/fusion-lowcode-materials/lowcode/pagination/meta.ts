@@ -1,13 +1,17 @@
-module.exports = {
+import snippets from './snippets';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentPaginationName = `${CURRENT_COMP_PREFIX}Pagination`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Pagination',
+  componentName: componentPaginationName,
   title: '翻页器',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Pagination',
+    exportName: componentPaginationName,
     main: '',
     destructuring: true,
     subName: '',
@@ -231,5 +235,5 @@ module.exports = {
   },
   icon: '',
   category: '引导',
-  snippets: require('./snippets'),
+  snippets,
 };

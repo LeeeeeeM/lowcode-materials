@@ -1,13 +1,16 @@
-module.exports = {
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentNavName = `${CURRENT_COMP_PREFIX}Nav`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Nav',
+  componentName: componentNavName,
   title: '导航',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Nav',
+    exportName: componentNavName,
     main: '',
     destructuring: true,
     subName: '',

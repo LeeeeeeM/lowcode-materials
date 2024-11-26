@@ -1,16 +1,18 @@
 import snippets from './snippets';
 import { IPublicModelSettingField } from '@alilc/lowcode-types';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentTabName = `${CURRENT_COMP_PREFIX}Tab`;
 
 export default {
   group: 'FUSION基础组件',
-  componentName: 'Tab',
+  componentName: componentTabName,
   title: '选项卡',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Tab',
+    exportName: componentTabName,
     main: '',
     destructuring: true,
     subName: '',
@@ -240,7 +242,7 @@ export default {
                 for (const primaryKey in map) {
                   if (Object.hasOwnProperty.call(map, primaryKey)) {
                     items.push({
-                      componentName: 'Tab.Item',
+                      componentName: `${componentTabName}.Item`,
                       props: map[primaryKey],
                     });
                   }
@@ -393,11 +395,11 @@ export default {
     advanced: {
       initialChildren: [
         {
-          componentName: 'Tab.Item',
+          componentName: `${componentTabName}.Item`,
           props: { primaryKey: 'item1' },
         },
         {
-          componentName: 'Tab.Item',
+          componentName: `${componentTabName}.Item`,
           props: { primaryKey: 'item2' },
         },
       ],

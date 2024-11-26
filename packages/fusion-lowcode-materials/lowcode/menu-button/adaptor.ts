@@ -2,6 +2,7 @@ import parseData from '../utils/parse-data';
 import { CURRENT_COMP_PREFIX } from '../_common';
 const componentSubMenuName = `${CURRENT_COMP_PREFIX}SubMenu`;
 const componentMenuName = `${CURRENT_COMP_PREFIX}Menu`;
+const componentTypographyName = `${CURRENT_COMP_PREFIX}Typography`;
 
 export const createDataSource = (
   list,
@@ -134,7 +135,7 @@ const createMenuItem = (item) => {
             },
           }
         : {
-            componentName: 'Typography.Text',
+            componentName: `${componentTypographyName}.Text`,
             props: {
               children: value,
               style: {
@@ -193,7 +194,7 @@ function getButtonLabel(buttonItem) {
             },
           };
         return {
-          componentName: 'Typography.Text',
+          componentName: `${componentTypographyName}.Text`,
           props: {
             children: value,
             style: {

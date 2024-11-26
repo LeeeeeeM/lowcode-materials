@@ -1,13 +1,17 @@
-module.exports = {
+import snippets from './snippets';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentProgressName = `${CURRENT_COMP_PREFIX}Progress`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Progress',
+  componentName: componentProgressName,
   title: '进度指示器',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Progress',
+    exportName: componentProgressName,
     main: '',
     destructuring: true,
     subName: '',
@@ -142,5 +146,5 @@ module.exports = {
   },
   icon: '',
   category: '信息反馈',
-  snippets: require('./snippets'),
+  snippets,
 };

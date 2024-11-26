@@ -1,13 +1,17 @@
-module.exports = {
+import snippets from './snippets';
+import {CURRENT_COMP_PREFIX}  from '../_common';
+const componentFormName = `${CURRENT_COMP_PREFIX}Form`;
+
+export default {
   group: 'FUSION基础组件',
-  componentName: 'Form',
+  componentName: componentFormName,
   title: '表单容器',
   docUrl: '',
   screenshot: '',
   npm: {
     package: '@alilc/lowcode-materials',
     version: '{{version}}',
-    exportName: 'Form',
+    exportName: componentFormName,
     main: '',
     destructuring: true,
     subName: '',
@@ -388,12 +392,12 @@ module.exports = {
       callbacks: {
         onNodeAdd: (dragment, currentNode) => {
           // 拖入的内容为LayoutP时,不做包裹动作
-          if (!dragment || dragment.componentName === 'Form.Item') {
+          if (!dragment || dragment.componentName === `${componentFormName}.Item`) {
             return;
           }
           // 为目标元素包裹一层P
           const layoutPNode = currentNode.document.createNode({
-            componentName: 'Form.Item',
+            componentName: `${componentFormName}.Item`,
             title: '表单项',
             props: {
               label: '表单项: ',
@@ -419,5 +423,5 @@ module.exports = {
 
   icon: 'https://img.alicdn.com/tfs/TB1oH02u2b2gK0jSZK9XXaEgFXa-112-64.png',
   category: '信息输入',
-  snippets: require('./snippets'),
+  snippets,
 };

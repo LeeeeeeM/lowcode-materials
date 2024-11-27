@@ -30,7 +30,7 @@ export const EditTable = function (props: EditTableProps) {
       return showInEdit ? !!rowRecord.editMode : !rowRecord.editMode;
     };
   }
-  const defaultActionColumnButtons = [
+  const editAndDeleteColumnButtons = [
     {
       children: '编辑',
       type: 'primary',
@@ -46,6 +46,18 @@ export const EditTable = function (props: EditTableProps) {
       },
       hidden: actionColumnButtonsHidden(true),
     },
+    {
+      children: '删除',
+      type: 'primary',
+      onClick(e, payload) {
+        const { rowKey, rowIndex, rowRecord } = payload;
+        dataSourceRef.current = dataSourceRef.current.filter((item) => item[primaryKey] !== rowKey);
+        setDataSource(dataSourceRef.current);
+        onRemove && onRemove(rowIndex, rowRecord, dataSourceRef.current);
+      },
+    },
+  ];
+  const saveAndCancelColumnButtons = [
     {
       children: '保存',
       type: 'primary',
@@ -82,43 +94,30 @@ export const EditTable = function (props: EditTableProps) {
         setDataSource(_data);
       },
       hidden: actionColumnButtonsHidden(false),
-    },
-    {
-      children: '删除',
-      type: 'primary',
-      onClick(e, payload) {
-        const { rowKey, rowIndex, rowRecord } = payload;
-        dataSourceRef.current = dataSourceRef.current.filter((item) => item[primaryKey] !== rowKey);
-        setDataSource(dataSourceRef.current);
-        onRemove && onRemove(rowIndex, rowRecord, dataSourceRef.current);
-      },
-    },
+    }
   ];
+
   React.useEffect(() => {
     const { dataSource: actionColumnDataSource = [] } = propActionColumnButtons;
     // 在 meta 中定义初始值
-    const customActionColumnDataSource = actionColumnDataSource.filter(item => !item.operation);
-    const originActionColumnDataSource = actionColumnDataSource.filter(item => item.operation);
-    const composedDefaultActionColumnButtons = defaultActionColumnButtons.map((item) => {
-      const editOperation = originActionColumnDataSource.find((item) => item.operation === 'edit');
-      const deleteOperation = originActionColumnDataSource.find((item) => item.operation === 'delete');
-      if (item.children === '编辑') {
+    const newActionColumnDataSource = actionColumnDataSource.map(item => {
+      if (item?.operation === 'edit') {
         return {
-          ...item,
-          ...editOperation
+          ...editAndDeleteColumnButtons[0],
+          ...item
         }
       }
-      if (item.children === '删除') {
+      if (item?.operation === 'delete') {
         return {
-          ...item,
-          ...deleteOperation
+          ...editAndDeleteColumnButtons[1],
+          ...item
         }
       }
       return item;
     });
     const _actionColumnButtons = {
       ...actionColumnButtons,
-      dataSource: [...composedDefaultActionColumnButtons, ...customActionColumnDataSource],
+      dataSource: [...newActionColumnDataSource, ...saveAndCancelColumnButtons],
     };
     setActionColumnButtons(_actionColumnButtons);
   }, [propActionColumnButtons, dataSource]);

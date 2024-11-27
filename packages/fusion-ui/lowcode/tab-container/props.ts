@@ -1,3 +1,6 @@
+import { CURRENT_COMP_PREFIX } from '../_common';
+const componentTabContainerName = `${CURRENT_COMP_PREFIX}TabContainer`;
+
 export default [
   {
     name: 'items',
@@ -100,7 +103,7 @@ export default [
             for (const primaryKey in map) {
               if (Object.hasOwnProperty.call(map, primaryKey)) {
                 items.push({
-                  componentName: 'TabContainer.Item',
+                  componentName: `${componentTabContainerName}.Item`,
                   props: map[primaryKey],
                 });
               }

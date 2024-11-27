@@ -1,6 +1,8 @@
 import { hideProp } from '../utils';
 
 import { operationProps } from '../common';
+import { CURRENT_COMP_PREFIX } from '../_common';
+const componentDrawerName = `${CURRENT_COMP_PREFIX}Drawer`;
 
 const wrapWithBlock = (dragment, node, dropTargetName, blockLen, layoutBlockNode) => {
   setTimeout(() => {
@@ -36,7 +38,7 @@ const wrapWithP = (dragment, node, dropTargetName, layoutPNode) => {
 };
 
 const meta = {
-  componentName: 'Drawer',
+  componentName: componentDrawerName,
   title: '抽屉',
   group: '精选组件',
   docUrl: '',
@@ -416,7 +418,7 @@ const snippets = [
     screenshot:
       'https://img.alicdn.com/imgextra/i3/O1CN01PIbHBa1dxMY8m44cf_!!6000000003802-55-tps-56-56.svg',
     schema: {
-      componentName: 'Drawer',
+      componentName: componentDrawerName,
       props: {
         prefix: 'next-',
         title: '高级抽屉',

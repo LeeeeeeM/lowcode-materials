@@ -1,9 +1,11 @@
 import { ComponentMetadata, Snippet } from '@ali/lowcode-types';
 import { operations } from '../common';
 import props from './common/props';
+import { CURRENT_COMP_PREFIX } from '../_common';
+const componentPageHeaderName = `${CURRENT_COMP_PREFIX}PageHeader`;
 
 const PageHeaderMeta: ComponentMetadata = {
-  componentName: 'PageHeader',
+  componentName: componentPageHeaderName,
   category: '布局容器类',
   group: '精选组件',
   title: '页头',
@@ -13,7 +15,7 @@ const PageHeaderMeta: ComponentMetadata = {
   npm: {
     package: '@alifd/fusion-ui',
     version: '1.0.0',
-    exportName: 'PageHeader',
+    exportName: componentPageHeaderName,
     main: 'lib/index.js',
     destructuring: true,
     subName: '',
@@ -213,7 +215,7 @@ const snippets: Snippet[] = [
     screenshot:
       'https://img.alicdn.com/imgextra/i2/O1CN01q3ZRHx24rrQ9ysyU8_!!6000000007445-55-tps-56-56.svg',
     schema: {
-      componentName: 'PageHeader',
+      componentName: componentPageHeaderName,
       title: '页头',
       props: {
         title: 'This is a designer title',

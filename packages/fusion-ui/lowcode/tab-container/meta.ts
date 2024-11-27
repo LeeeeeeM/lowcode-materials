@@ -1,4 +1,6 @@
 import { ComponentMetadata, Snippet } from '@ali/lowcode-types';
+import { CURRENT_COMP_PREFIX } from '../_common';
+const componentTabContainerName = `${CURRENT_COMP_PREFIX}TabContainer`;
 
 import props from './props';
 
@@ -8,7 +10,7 @@ const snippets: Snippet[] = [
     screenshot:
       'https://img.alicdn.com/imgextra/i4/O1CN01mh9LPG268B90t8DaA_!!6000000007616-55-tps-56-56.svg',
     schema: {
-      componentName: 'TabContainer',
+      componentName: componentTabContainerName,
       props: {
         shape: 'pure',
         size: 'medium',
@@ -16,14 +18,14 @@ const snippets: Snippet[] = [
       },
       children: [
         {
-          componentName: 'TabContainer.Item',
+          componentName: `${componentTabContainerName}.Item`,
           props: {
             title: '标签项1',
             primaryKey: 'tab-item-1',
           },
         },
         {
-          componentName: 'TabContainer.Item',
+          componentName: `${componentTabContainerName}.Item`,
           props: {
             title: '标签项2',
             primaryKey: 'tab-item-2',
@@ -35,7 +37,7 @@ const snippets: Snippet[] = [
 ];
 
 const tabItemMeta = {
-  componentName: 'TabContainer.Item',
+  componentName: `${componentTabContainerName}.Item`,
   title: '选项卡',
   docUrl: '',
   screenshot: '',
@@ -43,7 +45,7 @@ const tabItemMeta = {
   npm: {
     package: '@alifd/fusion-ui',
     version: '{{version}}',
-    exportName: 'TabContainer',
+    exportName: componentTabContainerName,
     main: 'lib/index.js',
     destructuring: true,
     subName: 'Item',
@@ -211,7 +213,7 @@ const tabItemMeta = {
 
 const TabContainerMeta: ComponentMetadata[] = [
   {
-    componentName: 'TabContainer',
+    componentName: componentTabContainerName,
     title: '选项卡',
     category: '布局容器类',
     group: '精选组件',
@@ -222,7 +224,7 @@ const TabContainerMeta: ComponentMetadata[] = [
     npm: {
       package: '@alifd/fusion-ui',
       version: '{{version}}',
-      exportName: 'TabContainer',
+      exportName: componentTabContainerName,
       main: 'lib/index.js',
       destructuring: true,
       subName: '',
@@ -231,7 +233,7 @@ const TabContainerMeta: ComponentMetadata[] = [
       component: {
         isContainer: true,
         nestingRule: {
-          childWhitelist: ['TabContainer.Item'],
+          childWhitelist: [`${componentTabContainerName}.Item`],
         },
       },
       props,

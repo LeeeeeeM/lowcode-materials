@@ -9,6 +9,7 @@ import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import { ToggleIcon, CustomIcon } from '@/components/toggle-icon';
 import { formatFormItems } from '@/components/pro-form/layouts/pro-form';
 import Operations from '@/common/operations';
+import { CURRENT_COMP_PREFIX } from '@/_common';
 
 const { useState, useEffect, useRef, cloneElement } = React;
 export const FilterItem: typeof Item = Form.Item;
@@ -424,5 +425,7 @@ Filter.defaultProps = {
   hideExpandButton: false,
   enableForm: false,
 };
+
+Filter.displayName = `${CURRENT_COMP_PREFIX}Filter`
 
 export { Filter };

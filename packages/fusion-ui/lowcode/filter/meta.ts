@@ -2,6 +2,8 @@ import { ComponentMetadata, Snippet } from '@ali/lowcode-types';
 import { formItemsProps } from '../pro-form/common/form-base-props';
 import { showWithLabelAlign } from '../utils';
 import { operations } from '../common';
+import { CURRENT_COMP_PREFIX } from '../_common';
+const componentFilterName = `${CURRENT_COMP_PREFIX}Filter`;
 
 const operationConfig = {
   name: 'operationConfig',
@@ -36,7 +38,7 @@ const operationConfig = {
 };
 
 const FilterMeta: ComponentMetadata = {
-  componentName: 'Filter',
+  componentName: componentFilterName,
   title: '查询筛选',
   group: '精选组件',
   category: '表格类',
@@ -47,7 +49,7 @@ const FilterMeta: ComponentMetadata = {
   npm: {
     package: '@alifd/fusion-ui',
     version: '0.1.6-beta.8',
-    exportName: 'Filter',
+    exportName: componentFilterName,
     main: 'lib/index.js',
     destructuring: true,
     subName: '',
@@ -317,7 +319,7 @@ const snippets: Snippet[] = [
     screenshot:
       'https://img.alicdn.com/imgextra/i1/O1CN01O4Oshp1RA6Z0sFZ6h_!!6000000002070-55-tps-56-56.svg',
     schema: {
-      componentName: 'Filter',
+      componentName: componentFilterName,
       id: 'node_ockt5mo4jj1',
       props: {
         labelAlign: 'top',

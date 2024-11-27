@@ -1,9 +1,11 @@
 import { hideProp } from '../utils';
+import { CURRENT_COMP_PREFIX } from '../_common';
+const componentAnchorName = `${CURRENT_COMP_PREFIX}Anchor`;
 
 const meta = {
   components: [
     {
-      componentName: 'Anchor',
+      componentName: componentAnchorName,
       group: '精选组件',
       title: '电梯容器',
       category: '布局容器类',
@@ -14,7 +16,7 @@ const meta = {
       npm: {
         package: '@alifd/fusion-ui',
         version: '1.0.24-5',
-        exportName: 'Anchor',
+        exportName: componentAnchorName,
         main: 'lib/index.js',
         destructuring: true,
         subName: '',

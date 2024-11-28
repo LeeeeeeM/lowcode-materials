@@ -3,6 +3,14 @@ import { hideProp } from '../utils';
 import { operationProps } from '../common';
 import { CURRENT_COMP_PREFIX } from '../_common';
 const componentDrawerName = `${CURRENT_COMP_PREFIX}Drawer`;
+import {CURRENT_FUSION_PREFIX}  from '../_common';
+const componentCardName = `${CURRENT_FUSION_PREFIX}Card`;
+const componentListName = `${CURRENT_FUSION_PREFIX}List`;
+const componentMessageName = `${CURRENT_FUSION_PREFIX}Message`;
+const componentFormName = `${CURRENT_FUSION_PREFIX}Form`;
+const componentSliderName = `${CURRENT_FUSION_PREFIX}Slider`;
+const componentBoxName = `${CURRENT_FUSION_PREFIX}Box`;
+const componentNextTableName = `${CURRENT_FUSION_PREFIX}NextTable`;
 
 const wrapWithBlock = (dragment, node, dropTargetName, blockLen, layoutBlockNode) => {
   setTimeout(() => {
@@ -317,14 +325,14 @@ const meta = {
 
         if (
           [
-            'Form',
+            componentFormName,
             'ResponsiveGrid',
-            'Box',
-            'Card',
-            'List',
-            'Message',
-            'Slider',
-            'NextTable',
+            componentBoxName,
+            componentCardName,
+            componentListName,
+            componentMessageName,
+            componentSliderName,
+            componentNextTableName,
           ].includes(dragment.componentName) ||
           dragment.getPropValue('isFillContainer')
         ) {

@@ -1,1 +1,2 @@
 export const CURRENT_COMP_PREFIX = 'FUSION_UI_';
+export const CURRENT_FUSION_PREFIX = 'FUSION_';

@@ -2,7 +2,7 @@ import snippets from './snippets.design';
 import { parseData } from '../utils/parse-data';
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: 'Collapse',
   title: '折叠面板',
   docUrl: '',

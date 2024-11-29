@@ -2,7 +2,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentDatePickerName = `${CURRENT_COMP_PREFIX}DatePicker`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: 'WeekPicker',
   title: 'WeekPicker',
   docUrl: '',

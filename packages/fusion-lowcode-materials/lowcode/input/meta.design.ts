@@ -1,7 +1,7 @@
 import snippets from './snippets.design';
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: 'Input',
   title: '输入框',
   docUrl: '',

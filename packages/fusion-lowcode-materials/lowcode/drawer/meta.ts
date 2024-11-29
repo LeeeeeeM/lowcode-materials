@@ -11,7 +11,7 @@ const componentBoxName = `${CURRENT_COMP_PREFIX}Box`;
 const componentNextTableName = `${CURRENT_COMP_PREFIX}NextTable`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: componentDrawerName,
   title: '抽屉',
   docUrl: '',

@@ -3,7 +3,7 @@ import parseData from '../utils/parse-data';
 import { createDataSource } from './adaptor';
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: 'CascaderSelect',
   title: '级联选择器',
   docUrl: '',

@@ -2,7 +2,7 @@ import snippets from './snippets.design';
 import { getDataFromPlainText } from './adaptor';
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: 'Step',
   title: '步骤条',
   docUrl: '',

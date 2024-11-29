@@ -4,7 +4,7 @@ const componentSubMenuName = `${CURRENT_COMP_PREFIX}SubMenu`;
 const componentMenuButtonName = `${CURRENT_COMP_PREFIX}MenuButton`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: 'CheckboxItem',
   title: '复选框',
   docUrl: '',

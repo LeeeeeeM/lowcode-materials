@@ -3,7 +3,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentRadioName = `${CURRENT_COMP_PREFIX}Radio`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: componentRadioName,
   title: '单选框',
   docUrl: '',

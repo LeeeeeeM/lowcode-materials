@@ -2,7 +2,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentSelectName = `${CURRENT_COMP_PREFIX}Select`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: `${componentSelectName}.Option`,
   title: 'Select.Option',
   docUrl: '',

@@ -3,7 +3,7 @@ const componentTypographyName = `${CURRENT_COMP_PREFIX}Typography`;
 const componentParagraphName = `${CURRENT_COMP_PREFIX}Paragraph`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: componentParagraphName,
   title: 'Paragraph',
   docUrl: '',

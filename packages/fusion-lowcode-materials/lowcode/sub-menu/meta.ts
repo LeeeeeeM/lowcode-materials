@@ -4,7 +4,7 @@ const componentMenuName = `${CURRENT_COMP_PREFIX}Menu`;
 const componentMenuButtonName = `${CURRENT_COMP_PREFIX}MenuButton`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: componentSubMenuName,
   title: '子菜单',
   docUrl: '',

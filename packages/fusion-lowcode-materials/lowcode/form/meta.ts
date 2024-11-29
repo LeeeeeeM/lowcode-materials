@@ -3,7 +3,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentFormName = `${CURRENT_COMP_PREFIX}Form`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: componentFormName,
   title: '表单容器',
   docUrl: '',

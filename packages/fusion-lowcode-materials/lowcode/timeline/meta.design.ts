@@ -50,7 +50,7 @@ const updateChildren = (target, value) => {
 };
 
 module.exports = {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: 'Timeline',
   title: '时间轴',
   docUrl: '',

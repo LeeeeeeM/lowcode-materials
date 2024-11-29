@@ -3,7 +3,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentAvatarName = `${CURRENT_COMP_PREFIX}Avatar`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: componentAvatarName,
   title: '头像',
   docUrl: '',

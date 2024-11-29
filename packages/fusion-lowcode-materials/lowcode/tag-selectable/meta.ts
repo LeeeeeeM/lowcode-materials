@@ -2,7 +2,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentTagName = `${CURRENT_COMP_PREFIX}Tag`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: `${componentTagName}.Selectable`,
   title: '可选中标签',
   docUrl: '',

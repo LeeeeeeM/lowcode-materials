@@ -3,7 +3,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentPaginationName = `${CURRENT_COMP_PREFIX}Pagination`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: componentPaginationName,
   title: '翻页器',
   docUrl: '',

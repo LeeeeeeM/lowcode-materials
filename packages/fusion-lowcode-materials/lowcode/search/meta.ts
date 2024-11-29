@@ -1,7 +1,7 @@
 import snippets from './snippets';
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: 'Search',
   title: '搜索',
   docUrl: '',

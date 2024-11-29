@@ -3,7 +3,7 @@ import * as moment from 'moment';
 moment?.locale?.('zh-cn');
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: 'Calendar',
   title: '日历',
   docUrl: '',

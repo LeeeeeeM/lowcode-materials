@@ -2,7 +2,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentTreeName = `${CURRENT_COMP_PREFIX}Tree`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: 'TreeNode',
   title: '树形控件节点',
   docUrl: '',

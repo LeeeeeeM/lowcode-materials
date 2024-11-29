@@ -1,5 +1,5 @@
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: 'Pagination',
   title: '翻页器',
   docUrl: '',

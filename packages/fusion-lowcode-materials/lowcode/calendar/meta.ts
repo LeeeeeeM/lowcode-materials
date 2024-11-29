@@ -6,7 +6,7 @@ const componentCalendarName = `${CURRENT_COMP_PREFIX}Calendar`;
 moment?.locale?.('zh-cn');
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: componentCalendarName,
   title: '日历',
   docUrl: '',

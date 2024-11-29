@@ -2,7 +2,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentInputName = `${CURRENT_COMP_PREFIX}Input`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: `${componentInputName}.Password`,
   title: '密码框',
   docUrl: '',

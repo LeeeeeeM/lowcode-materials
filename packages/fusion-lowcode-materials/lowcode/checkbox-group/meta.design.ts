@@ -1,5 +1,5 @@
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: 'CheckboxGroup',
   title: '复选按钮组',
   docUrl: '',

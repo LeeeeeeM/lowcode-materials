@@ -1,5 +1,5 @@
 module.exports = {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: 'Link',
   title: '链接',
   npm: {

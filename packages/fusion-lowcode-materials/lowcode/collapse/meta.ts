@@ -2,7 +2,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentCollapseName = `${CURRENT_COMP_PREFIX}Collapse`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: componentCollapseName,
   title: '折叠面板',
   docUrl: '',

@@ -3,7 +3,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentAlertName = `${CURRENT_COMP_PREFIX}Message`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: componentAlertName,
   title: '提示',
   docUrl: '',

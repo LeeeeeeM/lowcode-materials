@@ -2,7 +2,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentListName = `${CURRENT_COMP_PREFIX}List`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: `${componentListName}.Item`,
   title: '列表项',
   docUrl: '',

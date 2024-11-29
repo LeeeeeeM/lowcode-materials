@@ -3,7 +3,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentProgressName = `${CURRENT_COMP_PREFIX}Progress`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: componentProgressName,
   title: '进度指示器',
   docUrl: '',

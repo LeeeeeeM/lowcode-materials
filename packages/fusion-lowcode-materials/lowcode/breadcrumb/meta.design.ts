@@ -1,5 +1,5 @@
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: 'Breadcrumb',
   title: '面包屑',
   docUrl: '',

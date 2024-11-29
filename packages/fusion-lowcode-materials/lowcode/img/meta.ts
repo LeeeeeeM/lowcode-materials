@@ -4,7 +4,7 @@ const componentImageName = `${CURRENT_COMP_PREFIX}Image`;
 
 export default {
   componentName: componentImageName,
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   title: '图片',
   npm: {
     package: '@alilc/lowcode-materials',

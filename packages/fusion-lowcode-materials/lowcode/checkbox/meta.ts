@@ -3,7 +3,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentCheckboxName = `${CURRENT_COMP_PREFIX}Checkbox`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: componentCheckboxName,
   title: '复选按钮',
   docUrl: '',

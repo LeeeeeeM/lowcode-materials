@@ -1,5 +1,5 @@
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: 'Divider',
   title: '分隔符',
   docUrl: '',

@@ -1,5 +1,5 @@
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: 'Radio.Group',
   title: '单选框组',
   docUrl: '',

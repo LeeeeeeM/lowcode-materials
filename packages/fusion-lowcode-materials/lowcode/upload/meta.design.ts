@@ -1,7 +1,7 @@
 import snippets from './snippets';
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: 'Upload',
   title: '上传',
   docUrl: '',

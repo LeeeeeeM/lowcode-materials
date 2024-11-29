@@ -3,7 +3,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentSwitchName = `${CURRENT_COMP_PREFIX}Switch`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: componentSwitchName,
   title: '开关',
   docUrl: '',

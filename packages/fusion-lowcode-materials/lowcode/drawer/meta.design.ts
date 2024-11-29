@@ -1,5 +1,5 @@
 module.exports = {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: 'Drawer',
   title: '抽屉',
   docUrl: '',

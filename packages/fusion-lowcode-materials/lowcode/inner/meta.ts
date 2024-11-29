@@ -2,7 +2,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentDialogName = `${CURRENT_COMP_PREFIX}Dialog`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: 'Inner',
   title: 'Inner',
   docUrl: '',

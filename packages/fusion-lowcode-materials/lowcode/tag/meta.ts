@@ -3,7 +3,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentTagName = `${CURRENT_COMP_PREFIX}Tag`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: componentTagName,
   title: '标签',
   docUrl: '',

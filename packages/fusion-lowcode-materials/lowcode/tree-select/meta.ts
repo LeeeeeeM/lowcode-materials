@@ -3,7 +3,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentTreeSelectName = `${CURRENT_COMP_PREFIX}TreeSelect`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: componentTreeSelectName,
   title: '树型选择控件',
   docUrl: '',

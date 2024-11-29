@@ -3,7 +3,7 @@ const componentTypographyName = `${CURRENT_COMP_PREFIX}Typography`;
 
 export default [
   {
-    group: 'FUSION基础组件',
+    group: 'FUSION组件',
     componentName: 'Page',
     title: '页面',
     props: [

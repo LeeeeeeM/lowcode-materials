@@ -2,7 +2,7 @@ module.exports = {
   componentName: 'NextBlockCell',
   title: '区块Cell',
   category: '基础元素',
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   npm: {
     package: '@alilc/lowcode-materials',
     version: 'latest',

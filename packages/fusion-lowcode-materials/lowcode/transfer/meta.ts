@@ -3,7 +3,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentTransferName = `${CURRENT_COMP_PREFIX}Transfer`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: componentTransferName,
   title: '穿梭框',
   docUrl: '',

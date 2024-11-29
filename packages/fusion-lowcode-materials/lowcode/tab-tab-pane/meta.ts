@@ -2,7 +2,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentTabName = `${CURRENT_COMP_PREFIX}Tab`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: `${componentTabName}.TabPane`,
   title: 'Tab.TabPane',
   docUrl: '',

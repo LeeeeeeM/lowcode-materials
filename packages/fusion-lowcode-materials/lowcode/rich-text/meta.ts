@@ -1,7 +1,7 @@
 module.exports = {
   componentName: 'RichText',
   title: '需求占位',
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   npm: {
     package: '@alilc/lowcode-materials',
     version: 'latest',

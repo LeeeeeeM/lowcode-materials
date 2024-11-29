@@ -2,7 +2,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentConfigProviderName = `${CURRENT_COMP_PREFIX}ConfigProvider`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: 'ErrorBoundary',
   title: 'ErrorBoundary',
   docUrl: '',

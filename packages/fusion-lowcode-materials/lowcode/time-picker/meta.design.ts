@@ -1,7 +1,7 @@
 import snippets from './snippets';
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: 'TimePicker',
   title: '时间选择框',
   docUrl: '',

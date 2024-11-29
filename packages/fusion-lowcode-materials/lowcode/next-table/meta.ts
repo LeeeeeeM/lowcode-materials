@@ -3,7 +3,7 @@ const componentBoxName = `${CURRENT_COMP_PREFIX}Box`;
 const componentNextTableName = `${CURRENT_COMP_PREFIX}NextTable`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: componentNextTableName,
   title: '表格',
   docUrl: '',

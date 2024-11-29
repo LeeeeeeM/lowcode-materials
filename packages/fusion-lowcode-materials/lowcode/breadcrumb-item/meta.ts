@@ -2,7 +2,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentBreadcrumbName = `${CURRENT_COMP_PREFIX}Breadcrumb`;
 
 export default {
-  group: 'FUSION基础组件',
+  group: 'FUSION组件',
   componentName: `${componentBreadcrumbName}.Item`,
   title: '面包屑 Item',
   docUrl: '',

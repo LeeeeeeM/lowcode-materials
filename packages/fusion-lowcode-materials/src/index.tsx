@@ -71,6 +71,8 @@ export {
   DatePicker2,
 } from '@alifd/next';
 
+export { NextP, NextBlock, NextBlockCell } from './components/next-p';
+
 export {
   Avatar as FUSION_Avatar,
   Badge as FUSION_Badge,

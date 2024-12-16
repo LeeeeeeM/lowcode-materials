@@ -8,7 +8,6 @@ export default [
         curMode: 'inline',
         defaultSelectedKeys: ['1-1'],
         defaultOpenKeys: ['1'],
-        theme: 'dark',
         items:  [
           {
             key: '1',

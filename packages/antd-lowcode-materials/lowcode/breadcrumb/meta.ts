@@ -14,7 +14,7 @@ export default {
       items: [
         {
           name: 'routes',
-          title: { label: '路由栈信息', tip: 'router 的路由栈信息' },
+          title: { label: '路由栈信息', tip: 'router 的路由栈信息，传参为有 path 和 breadcrumbName 的对象' },
           propType: {
             type: 'arrayOf',
             value: {
@@ -91,32 +91,28 @@ export default {
       type: 'group',
       items: [
         {
-          name: 'itemRender',
+          name: 'enableCustomItemRender',
+          setter: 'BoolSetter',
           title: {
-            label: '自定义渲染',
-            tip: 'itemRender | 自定义渲染',
+            label: '开启自定义渲染',
+            tip: 'disabled | 是否为禁用状态',
           },
-          propType: { type: 'oneOfType', value: ['func', 'node'] },
-          setter: [
-            {
-              componentName: 'SlotSetter',
-              title: '自定义渲染插槽',
-              initialValue: {
-                type: 'JSSlot',
-                params: ['route', 'params', 'routes', 'paths'],
-                value: [],
-              },
-            },
-            {
-              componentName: 'FunctionSetter',
-              props: {
-                template:
-                  'itemRender(route, params, routes, paths,${extParams}){\n// 自定义渲染\nreturn `${route.breadcrumbName}`}',
-              },
-            },
-            'VariableSetter',
-          ],
+          defaultValue: false
         },
+        {
+          name: 'itemRender',
+          condition: (target: any) => {
+            const enableCustomRender = target.getProps().getPropValue('enableCustomItemRender');
+            return !!enableCustomRender;
+          },
+          title: {
+            label: '自定义渲染配置',
+            tip: '传参(route, params, routes, paths,${extParams})',
+          },
+          setter: {
+            componentName: 'FunctionSetter'
+          }
+        }
       ],
     },
   ],

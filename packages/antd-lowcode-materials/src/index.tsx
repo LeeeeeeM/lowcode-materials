@@ -12,7 +12,8 @@ export { BackTop } from 'antd';
 
 export { Badge } from 'antd';
 
-export { Breadcrumb } from 'antd';
+// export { Breadcrumb } from 'antd';
+export { default as Breadcrumb } from './components/breadcrumb';
 
 export { Card } from 'antd';
 

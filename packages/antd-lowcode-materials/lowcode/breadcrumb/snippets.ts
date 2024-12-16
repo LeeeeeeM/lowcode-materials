@@ -19,25 +19,7 @@ export default [
             breadcrumbName: 'An Application',
           },
         ],
-        itemRender: {
-          type: 'JSSlot',
-          params: ['route', 'params', 'routes', 'paths'],
-          value: [
-            {
-              componentName: 'Typography.Link',
-              props: {
-                href: {
-                  type: 'JSExpression',
-                  value: 'this.route.path',
-                },
-                children: {
-                  type: 'JSExpression',
-                  value: 'this.route.breadcrumbName',
-                },
-              },
-            },
-          ],
-        },
+        enableCustomItemRender: false,
       },
     },
   },

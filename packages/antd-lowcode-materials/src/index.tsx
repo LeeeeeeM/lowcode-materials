@@ -84,7 +84,8 @@ export { Segmented } from 'antd';
 
 export { Space } from 'antd';
 
-export { Spin } from 'antd';
+// export { Spin } from 'antd';
+export { default as Spin } from './components/spin';
 
 export { Steps } from 'antd';
 

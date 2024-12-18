@@ -4,7 +4,7 @@ const componentMenuButtonName = `${CURRENT_COMP_PREFIX}MenuButton`;
 
 
 export default {
-  group: 'FUSION组件',
+  group: 'FU弃用组件',
   componentName: componentMenuButtonName,
   title: '分隔按钮',
   docUrl: '',

@@ -4,7 +4,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentTabName = `${CURRENT_COMP_PREFIX}Tab`;
 
 export default {
-  group: 'FUSION组件',
+  group: 'FU弃用组件',
   componentName: componentTabName,
   title: '选项卡',
   docUrl: '',

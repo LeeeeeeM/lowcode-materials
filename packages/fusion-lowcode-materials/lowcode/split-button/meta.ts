@@ -3,7 +3,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentSplitButtonName = `${CURRENT_COMP_PREFIX}SplitButton`;
 
 export default {
-  group: 'FUSION组件',
+  group: 'FU弃用组件',
   componentName: componentSplitButtonName,
   title: '分隔按钮',
   docUrl: '',

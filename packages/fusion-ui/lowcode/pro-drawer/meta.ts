@@ -48,7 +48,7 @@ const wrapWithP = (dragment, node, dropTargetName, layoutPNode) => {
 const meta = {
   componentName: componentDrawerName,
   title: '抽屉',
-  group: '精选组件',
+  group: '精选弃用组件',
   docUrl: '',
   screenshot: '',
   npm: {

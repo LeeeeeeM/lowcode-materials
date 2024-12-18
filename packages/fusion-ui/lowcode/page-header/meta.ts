@@ -7,7 +7,7 @@ const componentPageHeaderName = `${CURRENT_COMP_PREFIX}PageHeader`;
 const PageHeaderMeta: ComponentMetadata = {
   componentName: componentPageHeaderName,
   category: '布局容器类',
-  group: '精选组件',
+  group: '精选弃用组件',
   title: '页头',
   docUrl: '',
   icon: 'https://img.alicdn.com/imgextra/i2/O1CN01q3ZRHx24rrQ9ysyU8_!!6000000007445-55-tps-56-56.svg',

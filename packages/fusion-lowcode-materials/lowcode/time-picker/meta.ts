@@ -3,7 +3,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentTimePickerName = `${CURRENT_COMP_PREFIX}TimePicker`;
 
 export default {
-  group: 'FUSION组件',
+  group: 'FU弃用组件',
   componentName: componentTimePickerName,
   title: '时间选择框',
   docUrl: '',

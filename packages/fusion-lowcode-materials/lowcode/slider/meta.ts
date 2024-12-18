@@ -3,7 +3,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentSliderName = `${CURRENT_COMP_PREFIX}Slider`;
 
 export default {
-  group: 'FUSION组件',
+  group: 'FU弃用组件',
   componentName: componentSliderName,
   title: '图片轮播',
   docUrl: '',

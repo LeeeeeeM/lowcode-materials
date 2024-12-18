@@ -1,5 +1,5 @@
 module.exports = {
-  group: 'FUSION组件',
+  group: 'FU弃用组件',
   componentName: 'Step.Item',
   title: '步骤项',
   docUrl: '',

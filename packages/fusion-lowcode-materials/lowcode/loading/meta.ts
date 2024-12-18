@@ -1,7 +1,7 @@
 import snippets from './snippets';
 
 export default {
-  group: 'FUSION组件',
+  group: 'FU弃用组件',
   componentName: 'Loading',
   title: '加载',
   docUrl: '',

@@ -2,7 +2,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentNavName = `${CURRENT_COMP_PREFIX}Nav`;
 
 export default {
-  group: 'FUSION组件',
+  group: 'FU弃用组件',
   componentName: 'Group',
   title: 'Group',
   docUrl: '',

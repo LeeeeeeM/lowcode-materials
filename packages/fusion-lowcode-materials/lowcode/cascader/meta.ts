@@ -3,7 +3,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentCascaderName = `${CURRENT_COMP_PREFIX}Cascader`;
 
 export default {
-  group: 'FUSION组件',
+  group: 'FU弃用组件',
   componentName: componentCascaderName,
   title: '级联',
   docUrl: '',

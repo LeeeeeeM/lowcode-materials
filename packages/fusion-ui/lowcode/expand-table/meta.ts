@@ -164,7 +164,7 @@ const ExpandTableMeta: ComponentMetadata = {
   screenshot:
     'https://img.alicdn.com/imgextra/i4/O1CN01N3gxxr1cjKnzi9iBU_!!6000000003636-55-tps-56-56.svg',
   devMode: 'proCode',
-  group: '精选组件',
+  group: '精选弃用组件',
   category: '表格类',
   tags: ['业务组件'],
   npm: {

@@ -5,7 +5,7 @@ import { CURRENT_COMP_PREFIX } from '../_common'
 const componentToastName = `${CURRENT_COMP_PREFIX}Message`;
 
 export default {
-  group: 'FUSION组件',
+  group: 'FU弃用组件',
   componentName: componentToastName,
   title: '面包片',
   docUrl: '',

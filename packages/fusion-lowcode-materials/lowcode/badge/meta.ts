@@ -3,7 +3,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentBadgeName = `${CURRENT_COMP_PREFIX}Badge`;
 
 export default {
-  group: 'FUSION组件',
+  group: 'FU弃用组件',
   componentName: componentBadgeName,
   title: '徽标数',
   docUrl: '',

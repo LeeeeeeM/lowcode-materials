@@ -2,7 +2,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentBoxName = `${CURRENT_COMP_PREFIX}Box`;
 
 export default {
-  group: 'FUSION组件',
+  group: 'FU弃用组件',
   componentName: componentBoxName,
   title: '容器',
   category: '布局容器类',

@@ -3,7 +3,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentUploadName = `${CURRENT_COMP_PREFIX}Upload`;
 
 export default {
-  group: 'FUSION组件',
+  group: 'FU弃用组件',
   componentName: componentUploadName,
   title: '上传',
   docUrl: '',

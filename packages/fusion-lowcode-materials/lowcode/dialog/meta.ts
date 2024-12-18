@@ -11,7 +11,7 @@ const componentBoxName = `${CURRENT_COMP_PREFIX}Box`;
 const componentNextTableName = `${CURRENT_COMP_PREFIX}NextTable`;
 
 export default {
-  group: 'FUSION组件',
+  group: 'FU弃用组件',
   componentName: componentDialogName,
   title: '对话框',
   docUrl: '',

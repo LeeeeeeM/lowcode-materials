@@ -437,120 +437,120 @@ export const proTableMeta: IComponentDescription = {
         },
       },
     },
-    {
-      title: '树状表格',
-      screenshot:
-        'https://img.alicdn.com/imgextra/i1/O1CN01m4IZ481VKPwFFbDhP_!!6000000002634-2-tps-112-112.png',
-      schema: {
-        componentName: 'ProTable',
-        props: {
-          isTree: true,
-          dataSource: [
-            {
-              id: 'id-2f5DdE2b-0',
-              date: '2013-06-12',
-              percent: 1.862,
-              documentAmount: 2022,
-              currency: 'CNY',
-              company: '支付宝科技有限公司',
-              children: [
-                {
-                  id: '2f5DdE2b-5Aee-c43c-e1db-0-0',
-                  date: '2013-06-12',
-                  percent: 1.862,
-                  documentAmount: 2022,
-                  currency: 'CNY',
-                  company: '支付宝科技有限公司',
-                },
-                {
-                  id: '2f5DdE2b-5Aee-c43c-e1db-0-1',
-                  date: '2013-06-12',
-                  percent: 1.862,
-                  documentAmount: 2022,
-                  currency: 'CNY',
-                  company: '支付宝科技有限公司',
-                },
-              ],
-            },
-            {
-              id: 'id-2f5DdE2b-1',
-              date: '2013-06-12',
-              percent: 1.862,
-              documentAmount: 2022,
-              currency: 'CNY',
-              company: '支付宝科技有限公司',
-              children: [
-                {
-                  id: '2f5DdE2b-5Aee-c43c-e1db-1-0',
-                  date: '2013-06-12',
-                  percent: 1.862,
-                  documentAmount: 2022,
-                  currency: 'CNY',
-                  company: '支付宝科技有限公司',
-                },
-                {
-                  id: '2f5DdE2b-5Aee-c43c-e1db-1-1',
-                  date: '2013-06-12',
-                  percent: 1.862,
-                  documentAmount: 2022,
-                  currency: 'CNY',
-                  company: '支付宝科技有限公司',
-                },
-              ],
-            },
-          ],
-          columns: [
-            {
-              title: '公司',
-              dataIndex: 'company',
-              width: 160,
-              formatType: 'link',
-              searchable: true,
-            },
-            {
-              title: '单据金额',
-              dataIndex: 'documentAmount',
-              formatType: 'money',
-            },
-            {
-              title: '币种',
-              dataIndex: 'currency',
-              formatType: 'currency',
-              filters: [
-                {
-                  label: 'CNY',
-                  value: 'CNY',
-                },
-                {
-                  label: 'USD',
-                  value: 'USD',
-                },
-                {
-                  label: 'JPY',
-                  value: 'JPY',
-                },
-                {
-                  label: 'HKD',
-                  value: 'HKD',
-                },
-              ],
-              filterMode: 'multiple',
-              explanation: '提示信息',
-              width: 110,
-            },
-            {
-              title: '完成进度',
-              dataIndex: 'percent',
-              formatType: 'progress',
-            },
-            {
-              title: '到账日期',
-              dataIndex: 'date',
-              formatType: 'date',
-            },
-          ],
-        },
-      },
-    },
+    // {
+    //   title: '树状表格',
+    //   screenshot:
+    //     'https://img.alicdn.com/imgextra/i1/O1CN01m4IZ481VKPwFFbDhP_!!6000000002634-2-tps-112-112.png',
+    //   schema: {
+    //     componentName: 'ProTable',
+    //     props: {
+    //       isTree: true,
+    //       dataSource: [
+    //         {
+    //           id: 'id-2f5DdE2b-0',
+    //           date: '2013-06-12',
+    //           percent: 1.862,
+    //           documentAmount: 2022,
+    //           currency: 'CNY',
+    //           company: '支付宝科技有限公司',
+    //           children: [
+    //             {
+    //               id: '2f5DdE2b-5Aee-c43c-e1db-0-0',
+    //               date: '2013-06-12',
+    //               percent: 1.862,
+    //               documentAmount: 2022,
+    //               currency: 'CNY',
+    //               company: '支付宝科技有限公司',
+    //             },
+    //             {
+    //               id: '2f5DdE2b-5Aee-c43c-e1db-0-1',
+    //               date: '2013-06-12',
+    //               percent: 1.862,
+    //               documentAmount: 2022,
+    //               currency: 'CNY',
+    //               company: '支付宝科技有限公司',
+    //             },
+    //           ],
+    //         },
+    //         {
+    //           id: 'id-2f5DdE2b-1',
+    //           date: '2013-06-12',
+    //           percent: 1.862,
+    //           documentAmount: 2022,
+    //           currency: 'CNY',
+    //           company: '支付宝科技有限公司',
+    //           children: [
+    //             {
+    //               id: '2f5DdE2b-5Aee-c43c-e1db-1-0',
+    //               date: '2013-06-12',
+    //               percent: 1.862,
+    //               documentAmount: 2022,
+    //               currency: 'CNY',
+    //               company: '支付宝科技有限公司',
+    //             },
+    //             {
+    //               id: '2f5DdE2b-5Aee-c43c-e1db-1-1',
+    //               date: '2013-06-12',
+    //               percent: 1.862,
+    //               documentAmount: 2022,
+    //               currency: 'CNY',
+    //               company: '支付宝科技有限公司',
+    //             },
+    //           ],
+    //         },
+    //       ],
+    //       columns: [
+    //         {
+    //           title: '公司',
+    //           dataIndex: 'company',
+    //           width: 160,
+    //           formatType: 'link',
+    //           searchable: true,
+    //         },
+    //         {
+    //           title: '单据金额',
+    //           dataIndex: 'documentAmount',
+    //           formatType: 'money',
+    //         },
+    //         {
+    //           title: '币种',
+    //           dataIndex: 'currency',
+    //           formatType: 'currency',
+    //           filters: [
+    //             {
+    //               label: 'CNY',
+    //               value: 'CNY',
+    //             },
+    //             {
+    //               label: 'USD',
+    //               value: 'USD',
+    //             },
+    //             {
+    //               label: 'JPY',
+    //               value: 'JPY',
+    //             },
+    //             {
+    //               label: 'HKD',
+    //               value: 'HKD',
+    //             },
+    //           ],
+    //           filterMode: 'multiple',
+    //           explanation: '提示信息',
+    //           width: 110,
+    //         },
+    //         {
+    //           title: '完成进度',
+    //           dataIndex: 'percent',
+    //           formatType: 'progress',
+    //         },
+    //         {
+    //           title: '到账日期',
+    //           dataIndex: 'date',
+    //           formatType: 'date',
+    //         },
+    //       ],
+    //     },
+    //   },
+    // },
   ],
 };

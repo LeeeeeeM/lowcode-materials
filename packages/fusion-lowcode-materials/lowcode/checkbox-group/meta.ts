@@ -4,7 +4,7 @@ const componentCheckboxName = `${CURRENT_COMP_PREFIX}Checkbox`;
 const componentCheckboxGroupName = `${CURRENT_COMP_PREFIX}CheckboxGroup`;
 
 export default {
-  group: 'FUSION组件',
+  group: 'FU弃用组件',
   componentName: componentCheckboxGroupName,
   title: '复选按钮组',
   docUrl: '',

@@ -4,7 +4,7 @@ const componentMenuName = `${CURRENT_COMP_PREFIX}Menu`;
 const componentMenuButtonName = `${CURRENT_COMP_PREFIX}MenuButton`;
 
 export default {
-  group: 'FUSION组件',
+  group: 'FU弃用组件',
   componentName: `${componentMenuName}.Divider`,
   title: '菜单分隔线',
   docUrl: '',

@@ -2,7 +2,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentDrawerName = `${CURRENT_COMP_PREFIX}Drawer`;
 
 export default {
-  group: 'FUSION组件',
+  group: 'FU弃用组件',
   componentName: `${componentDrawerName}.Inner`,
   title: 'Drawer.Inner',
   docUrl: '',

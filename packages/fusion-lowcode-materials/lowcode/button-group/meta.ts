@@ -2,7 +2,7 @@ import { CURRENT_COMP_PREFIX } from '../_common';
 const componentButtonName = `${CURRENT_COMP_PREFIX}Button`;
 
 export default {
-  group: 'FUSION组件',
+  group: 'FU弃用组件',
   componentName: `${componentButtonName}.Group`,
   title: '按钮组',
   docUrl: '',

@@ -4,7 +4,7 @@ const componentMenuName = `${CURRENT_COMP_PREFIX}Menu`;
 const componentMenuButtonName = `${CURRENT_COMP_PREFIX}MenuButton`;
 
 export default {
-  group: 'FUSION组件',
+  group: 'FU弃用组件',
   componentName: `${componentMenuName}.PopupItem`,
   title: '自定义弹出内容',
   docUrl: '',

@@ -2,7 +2,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentMenuName = `${CURRENT_COMP_PREFIX}Menu`;
 
 export default {
-  group: 'FUSION组件',
+  group: 'FU弃用组件',
   componentName: componentMenuName,
   title: '菜单',
   docUrl: '',

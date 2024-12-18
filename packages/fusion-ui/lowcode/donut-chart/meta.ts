@@ -6,7 +6,7 @@ const DonutChartMeta: IPublicTypeComponentMetadata = {
   componentName: 'DonutChart',
   title: '环形图',
   category: '图表',
-  group: '精选组件',
+  group: '精选弃用组件',
   docUrl: '',
   screenshot: '',
   devMode: 'proCode',

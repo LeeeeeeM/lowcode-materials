@@ -2,7 +2,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentCardName = `${CURRENT_COMP_PREFIX}Card`;
 
 export default {
-  group: 'FUSION组件',
+  group: 'FU弃用组件',
   componentName: 'CardContent',
   title: 'CardContent',
   docUrl: '',

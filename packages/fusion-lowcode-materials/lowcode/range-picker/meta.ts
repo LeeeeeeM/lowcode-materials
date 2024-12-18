@@ -2,7 +2,7 @@ import {CURRENT_COMP_PREFIX}  from '../_common';
 const componentDatePickerName = `${CURRENT_COMP_PREFIX}DatePicker`;
 
 export default {
-  group: 'FUSION组件',
+  group: 'FU弃用组件',
   componentName: 'RangePicker',
   title: '日期区段选择',
   docUrl: '',

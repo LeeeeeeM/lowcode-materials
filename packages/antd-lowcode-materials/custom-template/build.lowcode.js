@@ -6,7 +6,7 @@ module.exports = {
   },
   plugins: [
     [
-      '@alifd/build-plugin-lowcode',
+      '@evilemon/build-plugin-lowcode',
       {
         library,
         engineScope: "@alilc"

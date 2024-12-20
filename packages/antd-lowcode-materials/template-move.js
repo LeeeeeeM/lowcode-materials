@@ -7,12 +7,18 @@ const libName = `@ss-antd-material`;
 const lowcodeFolder = path.join(__dirname, 'lowcode');
 const customTemplatePath = path.join(__dirname, 'custom-template');
 
+const skipDirs = ['_setters', '_utils', 'affix', 'auto-complete', 'button', 'icon'];
+
 // 异步函数处理复制和修改文件
 async function processDirectory(dirent) {
   const folderName = dirent.name;
   const distDir = '/Users/sunliangmu/work/ss/ss-lowcode-comp/antd-lowcode-components';
   // const distDir = path.join(__dirname, 'new_temp');
   const newFolderPath = path.join(distDir, folderName);
+
+  if (skipDirs.includes(folderName)) {
+    return;
+  }
 
   // 处理以_开头的文件夹
   if (folderName.startsWith('_')) {

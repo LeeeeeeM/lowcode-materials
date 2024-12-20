@@ -1,6 +1,6 @@
 #!/bin/bash
 
-remote_path="/Users/sunliangmu/work/ss/lowcode-manage-center/public"
+remote_path="/Users/sunliangmu/work/ss/lowcode-manage-center/public/@ss-antd-material"
 
 CURRENT_DIR="X-LOWCODE-COMPONENT"
 

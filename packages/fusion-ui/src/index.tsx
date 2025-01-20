@@ -1,5 +1,5 @@
+// @ts-ignore
 import { version } from '../package';
-import { plugins, setters } from '@alilc/lowcode-engine';
 // export { default as ProCard } from './components/pro-card';
 // export type { CardProps, CardSectionProps } from './components/pro-card';
 
@@ -41,6 +41,7 @@ export { bizCssPrefix, displayName, version };
 
 
 if (process.env.NODE_ENV === 'development') {
+  const plugins = require('@alilc/lowcode-engine').plugins;
   const plugin = require('./plugins/index');
   async function registerPlugins() {
     await plugins.register(plugin.default);

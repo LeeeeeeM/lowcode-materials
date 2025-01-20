@@ -41,6 +41,7 @@ const A11yFilterMeta: ComponentMetadata = {
   group: '精选组件',
   category: '表格类',
   tags: ['业务组件'],
+  // 在左侧中隐藏
   hidden: true,
   docUrl: '',
   icon: 'https://img.alicdn.com/imgextra/i1/O1CN01O4Oshp1RA6Z0sFZ6h_!!6000000002070-55-tps-56-56.svg',
